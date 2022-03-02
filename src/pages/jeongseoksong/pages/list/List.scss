@@ -1,0 +1,133 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 1000px;
+  background-color: #f6f5ef;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav div {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+nav ul {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+}
+nav ul ol {
+  display: flex;
+  padding: 5px;
+}
+
+.coldbrew {
+  margin-top: 10px;
+}
+
+.textbar1 {
+  background-color: #f4f4f2;
+  width: 1000px;
+  //   margin-left: 100px;
+}
+
+.textbar1 ul {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.textbar1 ul ol {
+  padding: 0px;
+  margin-left: 15px;
+}
+
+.bigText {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.smallText {
+  font-size: 10px;
+}
+
+.menuBox {
+  margin-left: -20px;
+}
+
+.menuBox ul {
+  width: 1040px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.menuBox ul ol {
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.img {
+  display: flex;
+  width: 260px;
+  height: 220px;
+  padding: 10px 20px;
+}
+
+.img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.brewCoffee {
+  margin-top: 10px;
+}
+
+.textbar2 {
+  background-color: #f4f4f2;
+  width: 1000px;
+}
+
+.textbar2 ul {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.textbar2 ul ol {
+  padding: 0px;
+  margin-left: 15px;
+}
+
+.menuBox2 {
+  margin-left: -20px;
+}
+
+.menuBox2 ul {
+  width: 1040px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.menuBox2 ul ol {
+  padding: 0;
+  text-align: center;
+}
