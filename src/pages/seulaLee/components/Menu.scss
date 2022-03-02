@@ -1,0 +1,26 @@
+@use '../../../styles/commons.scss';
+@import '../../../styles/variables';
+
+
+.webucks-nav {
+    @include flexBetween;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f4f4f2;
+}
+
+.menu-bar {
+    li {
+        display: inline-block;
+        margin: 0 1rem;
+        color: #777;
+        text-transform: uppercase;
+        text-decoration: none;
+        word-break: break-all;
+        word-spacing: 2px;
+        cursor:pointer;
+
+    }
+}

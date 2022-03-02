@@ -10,7 +10,8 @@ import MainKyungwonlee from './pages/kyungwonlee/Main/Main';
 
 // 이슬아's 컴포넌트
 import LoginSeula from './pages/seulaLee/Login/Login';
-import MainSeula from './pages/seulaLee/Main/Main';
+import ListSeula from './pages/seulaLee/List/List';
+import DetailSeula from './pages/seulaLee/Detail/Detail';
 
 // 전해윤's 컴포넌트
 import LoginHaeyun from './pages/haeyunjun/Login/Login';
@@ -35,8 +36,9 @@ function Router() {
                 <Route path='/login-kyungwon' element={<LoginKyungwonlee/>}/>
                 <Route path='/main-kyungwon' element={<MainKyungwonlee/>}/>
 
-                <Route path='/login-seula' element={<LoginSeula/>}/>
-                <Route path='/main-seula' element={<MainSeula/>}/>
+                <Route path='/login_seula' element={<LoginSeula/>}/>
+                <Route path='/list_seula' element={<ListSeula/>}/>
+                <Route path='/detail_seula' element={<DetailSeula/>}/>
 
                 <Route path='/login-haeyun' element={<LoginHaeyun/>}/>
                 <Route path='/main-haeyun' element={<MainHaeyun/>}/>
