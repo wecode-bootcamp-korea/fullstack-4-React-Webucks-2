@@ -2,6 +2,21 @@ import React from 'react'
 import './List.scss'
 import TopNav from '../TopNav.js'
 
+function CoffeeCard() {
+    return (
+        <>                        
+            <li>
+                <div className="image-box">
+                <img alt='coffee1' src='images/haeyunjun/coffee1.webp'/>
+                </div>
+                <h3>Irish Cream Cold Brew ♡</h3>
+            </li>
+        </>
+        
+    )
+}
+
+
 function List() {
     return (
         <div>
@@ -15,77 +30,77 @@ function List() {
             <section className="coldbrew-items">
                 <ul className='coldbrew-items-list'>
                     <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG"> */}
-                    </div>
-                    <h3>Irish Cream Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.summitmedia-digital.com/spotph/images/2021/02/16/sbuxph-saltedcaramelcoldbrew-ongrey-1613448236.png"> */}
-                    </div>
-                    <h3>Salted Caramel Cream Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Reserve Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Starbucks® Cold Brew Coffee ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Vanilla Sweet Cream Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Starbucks® Cold Brew Coffee with Milk ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Starbucks Reserve® Nitro Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Nitro Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Vanilla Sweet Cream Nitro Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box">
-                    {/* <img alt="coffee" width='250px' height="250px" src="https://images.velog.io/images/haleyjun/post/5d2ceec3-918b-46ae-afb0-5b033390e061/Daco_1071899.png"> */}
-                    </div>
-                    <h3>Mocha Sweet Nitro Cold Brew ♡</h3>
-                </li>
-                <li>
-                    <div className="image-box empty">
-                    {/* <img> */}
-                    </div>
-                    <h3></h3>
-                </li>
-                <li>
-                    <div className="image-box empty">
-                    {/* <img> */}
-                    </div>
-                    <h3></h3>
-                </li>
+                        <div className="image-box">
+                        <img alt='coffee1' src='images/haeyunjun/coffee1.webp'/>
+                        </div>
+                        <h3>Irish Cream Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee2' src='images/haeyunjun/coffee2.webp'/>
+                        </div>
+                        <h3>Salted Caramel Cream Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee3' src='images/haeyunjun/coffee3.webp'/>
+                        </div>
+                        <h3>Reserve Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee4' src='images/haeyunjun/coffee4.webp'/>
+                        </div>
+                        <h3>Starbucks® Cold Brew Coffee ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee5' src='images/haeyunjun/coffee5.webp'/>
+                        </div>
+                        <h3>Vanilla Sweet Cream Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee6' src='images/haeyunjun/coffee6.webp'/>
+                        </div>
+                        <h3>Starbucks® Cold Brew Coffee with Milk ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee7' src='images/haeyunjun/coffee7.webp'/>
+                        </div>
+                        <h3>Starbucks Reserve® Nitro Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee8' src='images/haeyunjun/coffee8.jpeg'/>
+                        </div>
+                        <h3>Nitro Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee9' src='images/haeyunjun/coffee9.webp'/>
+                        </div>
+                        <h3>Vanilla Sweet Cream Nitro Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box">
+                        <img alt='coffee10' src='images/haeyunjun/coffee10.webp'/>
+                        </div>
+                        <h3>Mocha Sweet Nitro Cold Brew ♡</h3>
+                    </li>
+                    <li>
+                        <div className="image-box empty">
+                        {/* <img> */}
+                        </div>
+                        <h3></h3>
+                    </li>
+                    <li>
+                        <div className="image-box empty">
+                        {/* <img> */}
+                        </div>
+                        <h3></h3>
+                    </li>
                 </ul>
             </section>
 
@@ -98,25 +113,25 @@ function List() {
                 <ul className="brewed-coffee-items">
                     <li>
                         <div className="image-box">
-                        {/* <img alt="coffee" width='250px' height="250px" src="https://img.freepik.com/free-photo/iced-black-coffee-iced-americano-isolated-white-background_536380-64.jpg?size=626&ext=jpg"> */}
+                        <img alt='coffee9' src='images/haeyunjun/coffee11.webp'/>
                         </div>
                         <h3>Today's Coffee ♡</h3>
                     </li>
                     <li>
                         <div className="image-box">
-                        {/* <img alt="coffee" width='250px' height="250px" src="https://mrlukecy.com/wp-content/uploads/2020/05/ice-americano.png"> */}
+                        <img alt='coffee10' src='images/haeyunjun/coffee12.jpeg'/>
                         </div>
                         <h3>Ice Americano ♡</h3>
                     </li>  
                     <li>
                         <div className="image-box hidden">
-                        {/* <img alt="coffee" width='250px' height="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG"> */}
+                        {/* <img alt='coffee11' src='images/haeyunjun/coffee11.jpeg'/> */}
                         </div>
                         <h3></h3>
                     </li>
                     <li>
                         <div className="image-box hidden">
-                        {/* <img alt="coffee" width='250px' height="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG"> */}
+                        {/* <img alt='coffee8' src='images/haeyunjun/coffee8.jpeg'/> */}
                         </div>
                         <h3></h3>
                     </li>
