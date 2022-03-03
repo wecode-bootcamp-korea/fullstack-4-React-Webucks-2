@@ -36,9 +36,9 @@ function Router() {
                 <Route path='/login-kyungwon' element={<LoginKyungwonlee/>}/>
                 <Route path='/main-kyungwon' element={<MainKyungwonlee/>}/>
 
-                <Route path='/login_seula' element={<LoginSeula/>}/>
-                <Route path='/list_seula' element={<ListSeula/>}/>
-                <Route path='/detail_seula' element={<DetailSeula/>}/>
+                <Route path='/login-seula' element={<LoginSeula/>}/>
+                <Route path='/coffee' element={<ListSeula/>}/>
+                <Route path='/detail-seula' element={<DetailSeula/>}/>
 
                 <Route path='/login-haeyun' element={<LoginHaeyun/>}/>
                 <Route path='/main-haeyun' element={<MainHaeyun/>}/>

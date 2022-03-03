@@ -7,7 +7,7 @@ function Login(){
     //login btn 작동
     const navigate = useNavigate();
     const goUrl = () => {
-        navigate('/list_seula');
+        navigate('/coffee');
     };
     return (
         <div className="gray-body">
