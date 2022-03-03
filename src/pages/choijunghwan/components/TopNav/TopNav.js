@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopsNav.scss"
+import "./TopNav.scss"
 
 export default function TopsNav (){
 

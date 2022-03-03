@@ -1,7 +1,7 @@
 import "./Main.scss";
-import TopsNav from "../components/TopsNav/TopsNav";
+import TopsNav from "../components/TopNav/TopNav";
 import Brew from "../components/CoffeCard/CoffeCard";
-import coffeeData from "../coffeedata.json"
+import coffeeData from "../coffeelist.json"
 
 
 export default function Main (){
