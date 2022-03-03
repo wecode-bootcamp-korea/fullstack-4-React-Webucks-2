@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import "./Login.scss"
-import webucks_logo from "./webucks_logo.JPG"
+
 
 
 function Login() {
@@ -19,7 +19,7 @@ function Login() {
 
             <section className="login">
 
-                <img src={webucks_logo} className="loginLogo" alt="LOGO" / >
+                <img src={"./images/webucks_logo.JPG"} className="loginLogo" alt="LOGO" / >
 
                     <div action="" className="inputForm">
                         <input id="id" type="text" className="loginId" tabindex="1" placeholder="전화번호, 사용자 이름 또는 이메일" / >
