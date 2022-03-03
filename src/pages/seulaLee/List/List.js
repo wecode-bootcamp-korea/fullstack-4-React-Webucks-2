@@ -1,7 +1,7 @@
 import './List.scss';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
-import CoffeeCard from '/CoffeeCard.js';
+import CoffeeCard from './CoffeeCard';
 
 export function GalleryBrewed(){
    return (
@@ -33,7 +33,7 @@ function List(){
             </section>
             <section className="coffee-section brewed">
                 <h3 className="coffee-section-title">브루드 커피 ☕</h3>
-                <GalleryBrewed/>
+               
             </section>
         </div>
         <Footer/>

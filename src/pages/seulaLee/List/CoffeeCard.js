@@ -1,6 +1,6 @@
-/*import {Link} from "react-router-dom"; 
+import {Link} from "react-router-dom"; 
 import {useState,useEffect} from "react";
-import '../List/List.scss';
+import './List.scss';
 
 
 function CoffeeCard(){
@@ -13,11 +13,12 @@ function CoffeeCard(){
             .then( data =>{
                 setCoffeeList(data);
             });     
-    },[])
+    },[]);
     return(
         <ul className="coffee-gall">
-            {coffeeList.map =(coffeeName=>{
+            {coffeeList.map =(coffeeName =>{
                 return(
+                    //<li>{coffeeName.imgUrl}</li>
                     <li>
                     <Link className="coffee-thumbnail" to={`/detail-seula`}>
                         <div className="coffee-img"><img src={coffeeName.imgUrl} alt={coffeeName.imgAlt}/></div>
@@ -31,4 +32,4 @@ function CoffeeCard(){
     
 }
 
-export default CoffeeCard;*/
+export default CoffeeCard;
