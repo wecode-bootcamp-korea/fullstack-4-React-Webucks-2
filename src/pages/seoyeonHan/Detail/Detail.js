@@ -1,19 +1,13 @@
 import React from "react";
 import "./Detail.scss";
+import TopNav from '../Nav/TopNav';
 
 function Detail() {
   return (
     <>
-      <header>
-        <span className="webucksLogo">WeBucks</span>
-        <nav>
-          <span>COFFEE</span>
-          <span>MENU</span>
-          <span>STORE</span>
-          <span>WHAT'S NEW</span>
-        </nav>
-      </header>
-
+      <div className="Topnav">
+        <TopNav/>
+      </div>
       <div id="topMain">
         <h1>콜드 브루</h1>
         <span>홈 - MENU - 음료 - 콜드 브루 - 돌체 콜드 브루</span>

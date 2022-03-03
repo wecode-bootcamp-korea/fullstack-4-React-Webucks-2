@@ -1,4 +1,3 @@
-import React from 'react';
 import './Login.scss';
 import List from '../List/List';
 import {Link} from 'react-router-dom';

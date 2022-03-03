@@ -2,6 +2,7 @@ import React from "react";
 import "./List.scss";
 import Detail from '../Detail/Detail';
 import {Link} from 'react-router-dom';
+import TopNav from '../Nav/TopNav';
 
 function List() {
   function show(){
@@ -11,15 +12,9 @@ function List() {
   }
   return (
     <>
-      <header>
-        <span className="webucksLogo">WeBucks</span>
-        <nav>
-          <span>COFFEE</span>
-          <span>MENU</span>
-          <span>STORE</span>
-          <span>WHAT'S NEW</span>
-        </nav>
-      </header>
+      <div className="Topnav">
+        <TopNav/>
+      </div>
 
       <main>
         <dl>
