@@ -19,6 +19,7 @@ import MainHaeyun from './pages/haeyunjun/Main/Main';
 // 최정환's 컴포넌트
 import LoginJunghwan from './pages/choijunghwan/Login/Login';
 import MainJunghwan from './pages/choijunghwan/Main/Main';
+import DetailJunghwan from "./pages/choijunghwan/Detail/Detail";
 
 // 한서연's 컴포넌트
 import LoginSeoyeon from './pages/seoyeonHan/Login/Login';
@@ -43,6 +44,7 @@ function Router() {
 
                 <Route path='/login-junghwan' element={<LoginJunghwan/>}/>
                 <Route path='/main-junghwan' element={<MainJunghwan/>}/>
+                <Route path='/detail-junghwan' element={<DetailJunghwan/>}/>
 
                 <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
                 <Route path='/main-seoyeon' element={<MainSeoyeon/>}/>
