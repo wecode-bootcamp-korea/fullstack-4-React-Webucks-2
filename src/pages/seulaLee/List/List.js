@@ -1,39 +1,46 @@
 import './List.scss';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
-import CoffeeCard from './CoffeeCard';
+import {Link} from "react-router-dom"; 
+import React, { useState, useEffect } from 'react';
+//mport CoffeeCard from '../components/CoffeeCard';
 
-export function GalleryBrewed(){
-   return (
-        <ul className="coffee-gall">
-            <li>
-                <span className="coffee-thumbnail">
-                <div className="coffee-img"><img src="/images/b-01.jpg" alt="b-01"/></div>
-                <p className="coffee-name">아이스 커피</p>
-                </span>
-            </li>
-            <li>
-                <span className="coffee-thumbnail">
-                <div className="coffee-img"><img src="/images/b-02.jpg" alt="b-02"/></div>
-                <p className="coffee-name">오늘의 커피</p>
-                </span>
-            </li>
-        </ul>
-    );
-}
+
+
 
 function List(){
+    const [coffeeList,setCoffeeList] = useState([]);
+
+    useEffect(()=>{
+        fetch(
+            'data/cBrewcoffeeList.json',{method:'GET'})
+            .then(res => res.json())
+            .then( data =>{
+                setCoffeeList(data);
+            });     
+    },[]);
     return (
         <div className="wrap-default">
         <div className="container">
         <Menu />
             <section className="coffee-section cold-brew">
                 <h3 className="coffee-section-title">콜드 브루 커피 ☕</h3>
-                <CoffeeCard/>
+                <ul className="coffee-gall">
+                    {coffeeList.map((coffeeName) => {
+                        return (
+                            <li>
+                                <Link className="coffee-thumbnail" to={`/detail-seula`}>
+                                <div className="coffee-img"><img src={coffeeName.imgUrl} alt={coffeeName.imgAlt}/></div>
+                                <p className="coffee-name">{coffeeName.name}</p>
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </ul>
             </section>
             <section className="coffee-section brewed">
                 <h3 className="coffee-section-title">브루드 커피 ☕</h3>
-               
+                
             </section>
         </div>
         <Footer/>
