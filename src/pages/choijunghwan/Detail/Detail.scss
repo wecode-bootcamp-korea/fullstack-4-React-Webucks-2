@@ -1,0 +1,178 @@
+@mixin borderBottom($color) {
+  border-bottom: 2px solid $color;
+}
+
+.Detail {
+  .bigContainer {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .productCategory {
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .miniNav ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: silver;
+  }
+
+  .miniNav li {
+    list-style: none;
+  }
+  .container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    display: inline;
+    width: fit-content;
+    height: 30vh;
+  }
+
+  .productDetail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .productName {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    @include borderBottom(black);
+    padding-bottom: 20px;
+  }
+
+  .productName #koName {
+    font-size: 30px;
+  }
+
+  .productName #enName {
+    opacity: 0.7;
+    padding-top: 10px;
+  }
+
+  .heartIcon {
+    position: absolute;
+    right: 0;
+    opacity: 0.7;
+    font-size: 25px;
+    border: none;
+    background-color: inherit;
+  }
+
+  .productDescription {
+    @include borderBottom(silver);
+    padding: 20px 0;
+  }
+
+  .energyTitle {
+    font-size: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    @include borderBottom(silver);
+    padding-bottom: 20px;
+  }
+
+  #energySection {
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+  }
+
+  #energySection #right {
+    border-right: 1px dotted silver;
+    width: 50%;
+    padding-right: 10px;
+  }
+
+  #left {
+    width: 50%;
+    padding-left: 10px;
+  }
+
+  #right div,
+  #left div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+  }
+
+  .allergyBox {
+    display: flex;
+    flex-direction: row;
+    background-color: silver;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .commentHead {
+    @include borderBottom(silver);
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .commentSection {
+    padding: 20px 0;
+  }
+
+  .commentSection li {
+    padding-bottom: 5px;
+    list-style: none;
+  }
+
+  .commentSection .nickname {
+    font-weight: 900;
+  }
+
+  .commentSection span {
+    padding-right: 10px;
+  }
+
+  .commentSection i {
+    font-size: 20px;
+  }
+
+  .commentSection button {
+    font-size: 20px;
+    background-color: inherit;
+    border: none;
+  }
+
+  #commentForm {
+    margin: 20px 0;
+  }
+
+  #commentForm input {
+    padding: 7px;
+    width: 100%;
+    border: none;
+    background-color: silver;
+  }
+
+  footer {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0;
+  }
+
+  footer li {
+    padding-top: 5px;
+    list-style: none;
+  }
+}

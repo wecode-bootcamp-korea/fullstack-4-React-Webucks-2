@@ -1,8 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/reset.scss";
-import "./styles/commons.scss";
-import Router from "./Router";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Router from './Router';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,3 +9,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+
+

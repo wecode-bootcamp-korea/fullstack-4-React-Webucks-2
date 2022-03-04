@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  background-color: #f6f5ef;
+}
+
+
+.webucks {
+  font-family: "Dancing Script", cursive;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.navMenu {
+  display: flex;
+}
+
+ul ol {
+  padding: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+
