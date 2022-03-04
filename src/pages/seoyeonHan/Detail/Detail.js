@@ -1,5 +1,7 @@
 import React from "react";
 import "./Detail.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faHeart} from "@fortawesome/free-solid-svg-icons"
 import TopNav from '../Nav/TopNav';
 
 function Detail() {
@@ -18,7 +20,7 @@ function Detail() {
           <div id="dolceColdBrew">
             <h2>돌체 콜드 브루</h2>
             <span>Dolce Cold Brew</span>
-            <i className="fa-light fa-heart"></i>
+            <FontAwesomeIcon icon={faHeart} className="heart" />
           </div>
           <p>
             무더운 여름철, 동남아 휴가지에서 즐기는 커피를 떠오르게 하는
