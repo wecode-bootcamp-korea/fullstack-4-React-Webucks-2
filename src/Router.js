@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // 이경원's 컴포넌트
 import LoginKyungwonlee from "./pages/kyungwonlee/Login/Login";
 import MainKyungwonlee from "./pages/kyungwonlee/Main/Main";
+import DetailKyungwonlee from "./pages/kyungwonlee/Detail/Detail";
 
 // 이슬아's 컴포넌트
 // import LoginSeula from "./pages/seulaLee/Login/Login";
@@ -33,6 +34,7 @@ function Router() {
 
         <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
         <Route path="/main-kyungwon" element={<MainKyungwonlee />} />
+        <Route path="/detail-kyungwon" element={<DetailKyungwonlee />} />
 
         {/* <Route path="/login-seula" element={<LoginSeula />} />
         <Route path="/main-seula" element={<MainSeula />} />

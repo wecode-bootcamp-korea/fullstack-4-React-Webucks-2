@@ -1,20 +1,13 @@
 import React from "react";
+import TopNav from "../../../components/Nav/Nav";
 import "./Main.scss";
 
 function Main() {
   return (
     <div>
-      <header>
-        <h1 className="logo">Webucks</h1>
-        <nav>
-          <ul className="nav-links">
-            <li>COFFEE</li>
-            <li>MENU</li>
-            <li>STORE</li>
-            <li>WHAT'S NEW</li>
-          </ul>
-        </nav>
-      </header>
+      <div>
+        <TopNav />
+      </div>
 
       <section className="product">
         <div className="product-coffee">
