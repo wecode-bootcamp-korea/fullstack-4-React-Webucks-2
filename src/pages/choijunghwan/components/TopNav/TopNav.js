@@ -1,7 +1,7 @@
 import React from "react";
 import "./TopNav.scss"
 
-export default function TopsNav (){
+export default function TopNav (){
 
     return( 
     <div className="navigator">

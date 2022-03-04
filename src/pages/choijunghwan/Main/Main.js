@@ -1,5 +1,5 @@
 import "./Main.scss";
-import TopsNav from "../components/TopNav/TopNav";
+import TopNav from "../components/TopNav/TopNav";
 import Brew from "../components/CoffeCard/CoffeCard";
 import coffeeData from "../coffeelist.json"
 
@@ -7,7 +7,7 @@ import coffeeData from "../coffeelist.json"
 export default function Main (){
   return(
     <div className="List">
-  <TopsNav/>
+  <TopNav/>
     <div className="coldbrew">
       콜드 브루 커피 &nbsp;&nbsp;☕️ &nbsp;
       <span className="description"
