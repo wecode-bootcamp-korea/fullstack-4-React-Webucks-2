@@ -1,0 +1,30 @@
+@use '../../../styles/commons.scss';
+@import '../../../styles/variables';
+
+footer {
+    background: $color-default;
+    .footer-wrap {
+        width: 1280px;
+        margin: 0 auto;
+    }
+    .footer-menu {
+        @include flexBetween;
+        padding: 2.5rem 0;
+        color: $color-nav;
+        font-size: 0.9rem;
+        .footer-menu-title {
+            text-transform: uppercase;
+        }
+        ol {
+            margin-top: 20px;
+            li {
+                margin: 15px 0;
+            }
+        }
+    }
+}
+
+
+
+
+
