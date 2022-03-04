@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Detail.scss";
-import TopsNav from '../components/TopsNav';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart} from "@fortawesome/free-regular-svg-icons";
+import {faHeart} from "@fortawesome/free-solid-svg-icons"
+import TopNav from '../components/TopNav/TopNav';
 
 export default function Detail () {
+  const [heart, setHeart] = useState("black");
+  const toggleHeart = (e)=>{
+if(heart == "black") {
+  setHeart("red")
+}else{
+  setHeart("black")
+}
+  }
+
   return (
     <div className='Detail'>
         <div className="bigContainer">
-        <TopsNav />
+        <TopNav/>
         <span className="productCategory">콜드 브루</span>
         <nav className="miniNav">
           <ol>
@@ -20,13 +30,13 @@ export default function Detail () {
           </ol>
         </nav>
         <div className="container">
-          <img alt="coffee" src="/images/coffee.png" />
+          <img alt="coffee" src="https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW1lcmljYW5vfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
           <div className="productDetail">
             <div className="productName">
               <span id="koName">화이트 초콜릿 모카</span
               ><span id="enName">White Chocolate Mocha</span>
-              <button className="heartIcon">
-              <FontAwesomeIcon icon={faHeart} />
+              <button className="heartIcon" onClick={toggleHeart}>
+              <FontAwesomeIcon className='icon' icon={faHeart} style={{color:heart}} />
               </button>
             </div>
             <div className="productDescription">
