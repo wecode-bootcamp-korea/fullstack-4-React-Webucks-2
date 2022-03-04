@@ -28,8 +28,15 @@ import LoginJunghwan from "./pages/choijunghwan/Login/Login";
 import MainJunghwan from "./pages/choijunghwan/Main/Main";
 
 // 한서연's 컴포넌트
+<<<<<<< HEAD
+import LoginSeoyeon from './pages/seoyeonHan/Login/Login';
+import ListSeoyeon from './pages/seoyeonHan/List/List';
+import DetailSeoyeon from './pages/seoyeonHan/Detail/Detail';
+
+=======
 import LoginSeoyeon from "./pages/seoyeonHan/Login/Login";
 import MainSeoyeon from "./pages/seoyeonHan/Main/Main";
+>>>>>>> fd2f15ab621a13769bf9264ca425e7696d6eb47e
 
 function Router() {
   return (
@@ -53,11 +60,20 @@ function Router() {
         <Route path="/login-junghwan" element={<LoginJunghwan />} />
         <Route path="/main-junghwan" element={<MainJunghwan />} />
 
+<<<<<<< HEAD
+                <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
+                <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>
+                <Route path='/Detail-seoyeon' element={<DetailSeoyeon/>}/>
+            </Routes>
+        </BrowserRouter>
+    );
+=======
         <Route path="/login-seoyeon" element={<LoginSeoyeon />} />
         <Route path="/main-seoyeon" element={<MainSeoyeon />} /> */}
       </Routes>
     </BrowserRouter>
   );
+>>>>>>> fd2f15ab621a13769bf9264ca425e7696d6eb47e
 }
 
 export default Router;
