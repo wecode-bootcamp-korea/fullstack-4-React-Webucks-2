@@ -3,12 +3,14 @@ import Footer from '../components/Footer';
 import './Detail.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
+import {useState,useEffect} from 'react'
 
 export function IconHeart() {
     return <FontAwesomeIcon icon = {faHeart}/>;
 }
 
 function CoffeeReview(){
+    
     return (
         <div className="coffee-review">
                     <h3 className="review-title">리뷰</h3>
@@ -33,6 +35,8 @@ function CoffeeReview(){
 
 
 function CoffeeInfo(){
+    const [coffeeDetail,setCoffeeDetail] = useState({});
+    useEffect()
 return (<section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
             <div className="coffee-img-wrap">
