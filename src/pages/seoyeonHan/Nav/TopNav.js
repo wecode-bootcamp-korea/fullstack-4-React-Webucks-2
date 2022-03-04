@@ -4,7 +4,7 @@ import './TopNav.scss';
 function TopNav(){
     return(
       <>
-        <span class="webucksLogo">WeBucks</span>
+        <span className="webucksLogo">WeBucks</span>
         <nav>
           <span>COFFEE</span>
           <span>MENU</span>
