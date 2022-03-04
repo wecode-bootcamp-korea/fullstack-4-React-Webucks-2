@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Detail.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart} from "@fortawesome/free-regular-svg-icons";
+import {faHeart} from "@fortawesome/free-solid-svg-icons"
 import TopNav from '../components/TopNav/TopNav';
 
 export default function Detail () {
+  const [heart, setHeart] = useState("black");
+  const toggleHeart = (e)=>{
+if(heart == "black") {
+  setHeart("red")
+}else{
+  setHeart("black")
+}
+  }
+
   return (
     <div className='Detail'>
         <div className="bigContainer">
@@ -26,8 +35,8 @@ export default function Detail () {
             <div className="productName">
               <span id="koName">화이트 초콜릿 모카</span
               ><span id="enName">White Chocolate Mocha</span>
-              <button className="heartIcon">
-              <FontAwesomeIcon icon={faHeart} />
+              <button className="heartIcon" onClick={toggleHeart}>
+              <FontAwesomeIcon className='icon' icon={faHeart} style={{color:heart}} />
               </button>
             </div>
             <div className="productDescription">
