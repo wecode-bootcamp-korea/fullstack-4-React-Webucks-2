@@ -1,0 +1,62 @@
+[{"id":"CbNitroVaCream",
+   "name":"나이트로 바닐라 크림",
+   "imgUrl":"../images/cb-01.jpg",
+   "imgAlt":"cb-01.jpg",
+   "isIce": true,
+   "isLike":false
+},{"id":"CbNitroColdBrew",
+    "name":"나이트로 나이트로 콜드 브루",
+    "imgUrl":"../images/cb-02.jpg",
+    "imgAlt":"cb-02.jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbDolcheColdBrew",
+    "name":"돌체 콜드 브루",
+    "imgUrl":"../images/cb-03.jpg",
+    "imgAlt":"cb-03.jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbVaCreamColdBrew",
+    "name":"바닐라 크림 콜드 브루",
+    "imgUrl":"../images/cb-04.jpg",
+    "imgAlt":"cb-04.jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbVelvetDarkMocaNitro",
+    "name":"벨벳 다크 모카 나이트로",
+    "imgUrl":"../images/cb-05.jpg",
+    "imgAlt":"cb-05.jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbSigBlackColdBrew",
+    "name":"시그니처 더 블랙 콜드 브루",
+    "imgUrl":"../images/cb-06.jpg",
+    "imgAlt":"cb-06.jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbJejuVisaColdBrew",
+    "name":"제주 비자림 콜드 브루",
+    "imgUrl":"../images/cb-07.jpg",
+    "imgAlt":"cb-07jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbColdBrew",
+    "name":"콜드 브루",
+    "imgUrl":"../images/cb-08.jpg",
+    "imgAlt":"cb-08.jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbColdBrewMolt",
+    "name":"콜드 브루 몰트",
+    "imgUrl":"../images/cb-09.jpg",
+    "imgAlt":"cb-09.jpg",
+    "isIce": true,
+    "isLike":false
+ },{"id":"CbColdBrewOatLatte",
+    "name":"콜드 브루 오트 라떼",
+    "imgUrl":"../images/cb-10.jpg",
+    "imgAlt":"cb-10.jpg",
+    "isIce": true,
+    "isLike":false
+ }
+]

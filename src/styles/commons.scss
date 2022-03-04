@@ -1,0 +1,53 @@
+@use './reset';
+@import './variables';
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: $font-default;
+    color: $color-default;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gray-body {
+    background: $color-gray;
+}
+
+.wrap-default {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto 5rem;
+}
+
+.webucks-logo {
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $font-logo;
+    font-size: 2rem;
+}
+
+.webucks-logo.big-logo {
+    font-size: 5rem;
+}
