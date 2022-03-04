@@ -5,8 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Nav from "./components/Nav/Nav";
 // import Footer from "./components/Footer/Footer";
-import Login from "./pages/login/Login";
-import List from "./pages/list/List";
+import Login from "./pages/Login/Login";
+import List from "./pages/List/List";
 import Nav from "./components/TopNav/TopNav"
 import CoffeCard from "./components/CoffeCard/CoffeeCard"
 // import Signup from "./pages/Signup/Signup";
@@ -30,5 +30,4 @@ function Router() {
 }
 
 export default Router;
-
 
