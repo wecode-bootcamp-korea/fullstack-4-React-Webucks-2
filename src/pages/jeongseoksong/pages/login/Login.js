@@ -11,11 +11,8 @@ function Login() {
         navigate('/signup')
     }
 
-
     return (
         <div>
-
-
 
             <section className="login">
 
@@ -27,10 +24,8 @@ function Login() {
                     </div>
 
                             <button type="button" className="loginButton" disabled="disabled">로그인</button>
-                            <div onClick= { () => {goTosignup();  }} className="lostPasswd">비밀번호를 잊으셧나요?</div>
+                            <div onClick= { () => goTosignup() } className="lostPasswd">비밀번호를 잊으셧나요?</div>
             </section>
-
-            <script async src="index.js"></script>
 
 
         </div>
@@ -39,4 +34,4 @@ function Login() {
 
 
 
-                    export default Login 
+export default Login;
