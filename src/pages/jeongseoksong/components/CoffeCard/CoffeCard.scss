@@ -1,0 +1,51 @@
+
+
+
+
+.menuBox {
+margin-left: -20px;
+}
+
+.menuBox ul {
+width: 1040px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 0;
+}
+
+.menuBox ul ol {
+padding: 0;
+text-align: center;
+}
+
+.img {
+display: flex;
+width: 260px;
+height: 220px;
+padding: 10px 20px;
+}
+
+.img:hover {
+transform: scale(1.1);
+transition: 0.3s;
+overflow: hidden;
+}
+
+
+.menuBox2 {
+margin-left: -20px;
+}
+
+.menuBox2 ul {
+width: 1040px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 0;
+}
+
+.menuBox2 ul ol {
+padding: 0;
+text-align: center;
+}
