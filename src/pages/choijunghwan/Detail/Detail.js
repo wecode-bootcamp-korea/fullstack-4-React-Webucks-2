@@ -1,22 +1,39 @@
 import React, { useState } from 'react';
 import "./Detail.scss";
-
+import Comment from '../components/Comment/Comment';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-solid-svg-icons"
 import TopNav from '../components/TopNav/TopNav';
 
 export default function Detail () {
   const [heart, setHeart] = useState("black");
-  const toggleHeart = (e)=>{
-if(heart == "black") {
-  setHeart("red")
-}else{
-  setHeart("black")
-}
+  const [input, setInput] = useState("");
+  const [comment , setComment ] = useState({id:0,comment:""});
+  const [commentArr, setCommentArr] =useState([]);
+
+
+  const toggleHeart = ()=>{
+  heart == "black" ?  setHeart("red"):setHeart("black")
   }
 
+  const handleInput = (e) =>{
+    const {value} = e.target;
+
+    setInput(value);    
+    setComment({id:Date.now(),comment:value})  
+  
+  }
+
+  const createComment = (e) =>{
+    e.preventDefault();
+      
+    input == "" ? alert("입력값이 빈칸입니다") : setCommentArr(prev=>[...prev, comment])
+    setInput("");
+  }
+
+
   return (
-    <div className='Detail'>
+    <div className='DetailJung'>
         <div className="bigContainer">
         <TopNav/>
         <span className="productCategory">콜드 브루</span>
@@ -98,12 +115,13 @@ if(heart == "black") {
                   <span className="nickname">legend_dev</span>
                   <span className="comment"
                     >진짜 화이트 초콜릿 모카는 전설이다.진짜 화이트 초콜릿 모카는
-                    전설이다.진짜 하이트 초...</span
-                  >
+                    전설이다.진짜 하이트 초...</span>
                 </li>
+                { commentArr ? commentArr.map( (value)=> <Comment id={value.id} comment={value.comment} commentArr={commentArr} setCommentArr={setCommentArr}/> ): null
+                }
               </ol>
-              <form id="commentForm">
-                <input placeholder="리뷰를 입력해주세요" name="comment" />
+              <form onSubmit={createComment} id="commentForm">
+                <input value={input} placeholder="리뷰를 입력해주세요" name="comment" onChange={handleInput}/>
               </form>
             </section>
           </div>
