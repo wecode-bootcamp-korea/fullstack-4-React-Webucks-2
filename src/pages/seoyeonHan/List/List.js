@@ -6,17 +6,7 @@ import Card from "./Card";
 function List() {
   const [coffeeList, setCoffeeList] = useState([]);
   const [brewList, setBrewList] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("http://localhost:3000/data/CoffeeData.json", {
-  //     method: "GET",
-  //   })
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       setCoffeeList(data);
-  //     });
-  // }, []);
-
+  
   return (
     <div>
       <TopNav />
