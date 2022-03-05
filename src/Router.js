@@ -48,8 +48,8 @@ function Router() {
         <Route path="/detail-kyungwon" element={<DetailKyungwonlee />} />
 
         <Route path='/login-seula' element={<LoginSeula/>}/>
-        <Route path='/coffee' element={<ListSeula/>}/>
-        <Route path='/detail-seula' element={<DetailSeula/>}/>
+        <Route path='/list-seula' element={<ListSeula/>}/>
+        <Route path='/coffee/:id' element={<DetailSeula/>}/>
 
         <Route path='/login-haeyun' element={<LoginHaeyun/>}/>
         <Route path='/list-haeyun' element={<ListHaeyun/>}/>
