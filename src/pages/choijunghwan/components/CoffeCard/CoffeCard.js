@@ -25,4 +25,6 @@ export default function CoffeCard (data){
         </div>
       </div>
   )
-}
+
+
+    }
