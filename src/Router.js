@@ -28,7 +28,7 @@ import DetailHaeyun from './pages/haeyunjun/Detail/Detail';
 
 import LoginJunghwan from "./pages/choijunghwan/Login/Login";
 import MainJunghwan from "./pages/choijunghwan/Main/Main";
-
+import DetailJunghwan from "./pages/choijunghwan/Detail/Detail";
 
 // 한서연's 컴포넌트
 import LoginSeoyeon from './pages/seoyeonHan/Login/Login';
