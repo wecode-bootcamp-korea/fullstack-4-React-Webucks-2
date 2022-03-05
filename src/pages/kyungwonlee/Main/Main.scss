@@ -4,23 +4,23 @@
 
   .product-coffee {
     display: flex;
-    align-items: center;
     padding: var(--padding);
     margin-bottom: var(--padding);
     background-color: var(--bg-color);
 
-    h5 {
+    .title-kyungwon {
       font-size: 20px;
       font-weight: 600;
       cursor: pointer;
     }
 
-    i {
+    .i-kyungwon {
       margin: 0 var(--padding);
       font-size: 20px;
     }
   }
 }
+
 .coffee-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -32,7 +32,7 @@
   .coffee {
     text-align: center;
 
-    .img {
+    .img-kyungwon {
       overflow: hidden;
 
       img {

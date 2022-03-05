@@ -9,13 +9,13 @@ function LoginComponent() {
         <div className="login-form">
           <h1 className="logo">Webucks</h1>
           <input
-            className="id"
+            className="id input-kyungwon"
             type="text"
             placeholder="전화번호, 사용자 이름 또는 이메일"
             required
           />
           <input
-            className="password"
+            className="password input-kyungwon"
             type="password"
             placeholder="비밀번호"
             required

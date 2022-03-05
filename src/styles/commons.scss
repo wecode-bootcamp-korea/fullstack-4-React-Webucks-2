@@ -1,12 +1,12 @@
-@use './reset';
-@import './variables';
+@use "./reset";
+@import "./variables";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 body,
@@ -17,37 +17,42 @@ h4,
 h5,
 h6,
 p {
-    font-family: $font-default;
-    color: $color-default;
+  font-family: $font-default;
+  color: $color-default;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .gray-body {
-    background: $color-gray;
+  background: $color-gray;
 }
 
 .wrap-default {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .container {
-    width: 1280px;
-    margin: 0 auto 5rem;
+  width: 1280px;
+  margin: 0 auto 5rem;
 }
 
 .webucks-logo {
-    color: #000;
-    text-transform: capitalize;
-    text-align: center;
-    font-family: $font-logo;
-    font-size: 2rem;
+  color: #000;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: $font-logo;
+  font-size: 2rem;
 }
 
 .webucks-logo.big-logo {
-    font-size: 5rem;
+  font-size: 5rem;
+}
+
+:root {
+  --padding: 20px;
+  --bg-color: #f7f6f3;
 }
