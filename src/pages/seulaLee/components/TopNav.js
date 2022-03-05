@@ -1,5 +1,5 @@
 import {Link } from "react-router-dom"; 
-import './Menu.scss';
+import './TopNav.scss';
 
 const Menu = ()=>{
     return (
