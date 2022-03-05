@@ -2,18 +2,15 @@ import React from "react";
 import "./CoffeeCard/Coffee.scss"
 
 
-function CoffeeCard(){
+function CoffeeCard(coffee){
   return (
     <>
       <li className="menuData">
       <dl>
         <dt className="imgDt">
-          <img
-            src="images/coldbrew/coldbrew1.jpg"
-            alt="콜드브루1"
-          />
+          <img src={coffee.imgUrl} alt="coffee이미지" />
         </dt>
-        <dd>나이트로 바닐라 크림</dd>
+        <dd>{coffee.name}</dd>
       </dl>
     </li>
     </>
