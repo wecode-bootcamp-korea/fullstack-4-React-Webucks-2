@@ -1,0 +1,31 @@
+.menuData{
+    float: left;
+    width: 291px;
+    padding: 20px 0px;
+    list-style: none;
+
+    dl{
+        overflow: hidden;
+        margin-bottom: 40px;
+
+        .imgDt{
+            overflow: hidden;
+
+            img{
+                width: 275px;
+                transform: scale(1.0);
+                transition: transform .4s;
+                
+            &:hover{
+                transform: scale(1.2);
+                transition: transform .4s;
+            }
+            }
+        }
+        dd{
+            height: 54px;
+            line-height: 54px;
+            text-align: center;
+        }
+    }
+}

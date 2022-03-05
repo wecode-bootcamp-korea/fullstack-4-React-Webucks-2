@@ -1,0 +1,26 @@
+.navigator {
+  background-color: silver;
+  span {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navLists {
+    display: flex;
+    padding: 30px 10px 0 0;
+  }
+
+  .navLists li {
+    list-style-type: none;
+    margin-right: 25px;
+    color: rgb(102, 102, 102);
+  }
+}

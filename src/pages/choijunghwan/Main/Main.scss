@@ -1,0 +1,17 @@
+$imgWidth: 200px;
+
+.List {
+  .coldbrew,
+  .brewedCoffee {
+    margin-top: 15px;
+    background-color: silver;
+    padding-left: 15px;
+  }
+
+  .brewedSection,
+  .coldbrewSection {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
