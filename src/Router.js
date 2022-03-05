@@ -38,39 +38,35 @@ import DetailSeoyeon from './pages/seoyeonHan/Detail/Detail';
 
 
 function Router() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login-jeongseok" element={<LoginJeongseok />} />
-        <Route path="/main-jeongseok" element={<MainJeongseok />} />
-        <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/login-jeongseok" element={<LoginJeongseok />} />
+                <Route path="/main-jeongseok" element={<MainJeongseok />} />
+                <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
 
-        <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
-        <Route path="/main-kyungwon" element={<MainKyungwonlee />} />
-        <Route path="/detail-kyungwon" element={<DetailKyungwonlee />} />
+                <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
+                <Route path="/main-kyungwon" element={<MainKyungwonlee />} />
+                <Route path="/detail-kyungwon" element={<DetailKyungwonlee />} />
 
-        <Route path='/login-seula' element={<LoginSeula/>}/>
-        <Route path='/list-seula' element={<ListSeula/>}/>
-        <Route path='/coffee/:id' element={<DetailSeula/>}/>
+                <Route path='/login-seula' element={<LoginSeula/>}/>
+                <Route path='/list-seula' element={<ListSeula/>}/>
+                <Route path='/coffee/:id' element={<DetailSeula/>}/>
 
-        <Route path='/login-haeyun' element={<LoginHaeyun/>}/>
-        <Route path='/list-haeyun' element={<ListHaeyun/>}/>
-        <Route path='/detail-haeyun' element={<DetailHaeyun/>}/>
+                <Route path='/login-haeyun' element={<LoginHaeyun/>}/>
+                <Route path='/list-haeyun' element={<ListHaeyun/>}/>
+                <Route path='/detail-haeyun' element={<DetailHaeyun/>}/>
 
+                <Route path='/login-junghwan' element={<LoginJunghwan/>}/>
+                <Route path='/main-junghwan' element={<MainJunghwan/>}/>
+                <Route path='/detail-junghwan' element={<DetailJunghwan/>}/>
 
-        <Route path='/login-junghwan' element={<LoginJunghwan/>}/>
-        <Route path='/main-junghwan' element={<MainJunghwan/>}/>
-        <Route path='/detail-junghwan' element={<DetailJunghwan/>}/>
-
-
-        <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
-        <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>
-        <Route path='/Detail-seoyeon' element={<DetailSeoyeon/>}/>
-      </Routes>
-    </BrowserRouter>
+                <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
+                <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>
+                <Route path='/Detail-seoyeon' element={<DetailSeoyeon/>}/>
+            </Routes>
+        </BrowserRouter>
     );
-
-
 }
 
 export default Router;
