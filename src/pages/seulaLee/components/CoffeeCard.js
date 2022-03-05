@@ -1,17 +1,21 @@
 import {Link} from "react-router-dom"; 
-import React from 'react';
 import '../List/List.scss';
 
 
-function CoffeeCard(){
+function CoffeeCard({ list }){
    
         return(
-            <div className="coffee-gall-item">
-               <Link className="coffee-thumbnail" to={`/detail-seula`}>
-                <div className="coffee-img"><img src="/images/cb-01.jpg" alt="c"/></div>
-                <p className="coffee-name">a</p>
-                </Link>
-            </div>
+            
+                    
+                            <li>
+                                <Link className="coffee-thumbnail" to={`/coffee/`+list.id}>
+                                <div className="coffee-img"><img src={list.imgUrl} alt={list.imgAlt}/></div>
+                                <p className="coffee-name">{list.name}</p>
+                                </Link>
+                            </li>
+                       
+                    
+                
         );
 }
 

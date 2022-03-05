@@ -1,23 +1,20 @@
-import React from 'react'
-import "./List.scss"
-import TopNav from '../../components/TopNav/TopNav.js'
-
-
-
+import React from "react";
+import "./List.scss";
+import TopNav from "../components/TopNav/TopNav";
 
 function List() {
-
-
-    return (
-        <div>
-    <TopNav />
-    <section className="coldbrew">
+  return (
+    <div>
+      <TopNav />
+      <section className="coldbrew">
         <div className="textbar1">
-            <ul>
-                <ol className="bigText">콜드 브루 커피</ol>
-                {/* <ol><i className="fa-solid fa-mug-hot"></i></ol> */}
-                <ol className="smallText">디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)</ol>
-            </ul>
+          <ul>
+            <ol className="bigText">콜드 브루 커피</ol>
+            {/* <ol><i className="fa-solid fa-mug-hot"></i></ol> */}
+            <ol className="smallText">
+              디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
+            </ol>
+          </ul>
         </div>
         {/* <div className="menuBox">
             <ul>
@@ -33,14 +30,16 @@ function List() {
                 <ol><img className="img" src={"./images/cappuccino.jpg"} alt="" />나이트로 바닐라 크림10</ol>
             </ul>
         </div>  */}
-    </section>
-    <section className="brewCoffee">
+      </section>
+      <section className="brewCoffee">
         <div className="textbar2">
-            <ul>
-                <ol className="bigText">브루드 커피</ol>
-                {/* <ol><i className="fa-solid fa-mug-hot"></i></ol> */}
-                <ol className="smallText">디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)</ol>
-            </ul>
+          <ul>
+            <ol className="bigText">브루드 커피</ol>
+            {/* <ol><i className="fa-solid fa-mug-hot"></i></ol> */}
+            <ol className="smallText">
+              디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
+            </ol>
+          </ul>
         </div>
         {/* <div className="menuBox2">
             <ul>
@@ -48,14 +47,9 @@ function List() {
                 <ol><img className="img" src={"./images/cappuccino.jpg"} alt="" />오늘의커피</ol>
             </ul>
         </div> */}
-    </section>
-
-</div>
-        )
+      </section>
+    </div>
+  );
 }
 
-
-
-                    export default List
-
-
+export default List;
