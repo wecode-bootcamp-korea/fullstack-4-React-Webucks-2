@@ -6,7 +6,7 @@ import coffeeData from "../coffeelist.json"
 
 export default function Main (){
   return(
-    <div className="List">
+    <div className="ListJung">
   <TopNav/>
     <div className="coldbrew">
       콜드 브루 커피 &nbsp;&nbsp;☕️ &nbsp;
