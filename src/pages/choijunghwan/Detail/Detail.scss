@@ -2,7 +2,8 @@
   border-bottom: 2px solid $color;
 }
 
-.Detail {
+.DetailJung {
+  
   .bigContainer {
     width: 90vw;
     margin: auto;
@@ -29,6 +30,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    width: 90vw;
   }
 
   img {
@@ -174,5 +176,9 @@
   footer li {
     padding-top: 5px;
     list-style: none;
+  }
+
+  .deleteBtn {
+    margin-right: 100;
   }
 }

@@ -1,0 +1,52 @@
+.product {
+  display: flex;
+  flex-direction: column;
+
+  .product-coffee {
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    margin-bottom: var(--padding);
+    background-color: var(--bg-color);
+
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    i {
+      margin: 0 var(--padding);
+      font-size: 20px;
+    }
+  }
+}
+.coffee-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: var(--padding);
+  grid-row-gap: var(--padding);
+  margin-bottom: var(--padding);
+  padding: 0 var(--padding);
+
+  .coffee {
+    text-align: center;
+
+    .img {
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        transition: all 0.3s ease 0s;
+      }
+
+      :hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+    .name {
+      padding: calc(var(--padding) / 2);
+    }
+  }
+}

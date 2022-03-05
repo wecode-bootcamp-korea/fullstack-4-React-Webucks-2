@@ -31,7 +31,7 @@ export default function Login (){
      return ready == 1 ? setOpacity(1) : null
     }
 
-    return <div className='Login'>
+    return <div className='LoginJung'>
      <section className="loginBody">
       <span>Webucks</span>
       <div className="loginForm">

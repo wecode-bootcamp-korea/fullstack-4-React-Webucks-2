@@ -1,57 +1,59 @@
-.Login {
+.LoginJung {
   height: 100vh;
   padding-top: 50px;
   margin: 0 -100px;
   background-color: silver;
+
   span {
     font-family: "Dancing Script", cursive;
     font-size: 60px;
     margin-top: 20px;
   }
-}
 
-.loginBody {
-  width: 400px;
-  margin: 200px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 500px;
-  width: 400px;
-  background-color: white;
-  position: relative;
 
-  .loginBtn {
-    justify-content: center;
-    background-color: blue;
-    opacity: 0.3;
-    color: white;
-    width: 290px;
-    height: 30px;
-    border-radius: 8px;
-  }
-
-  .loginForm input {
-    width: 270px;
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-  .passwordBox {
+  .loginBody {
+    width: 400px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    background-color: white;
     position: relative;
-  }
-  .hide {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    border: none;
-    background-color: inherit;
-  }
-  .view {
-    position: absolute;
-    right: 40px;
-    top: 10px;
-    border: none;
-    background-color: inherit;
+
+    .loginBtn {
+      justify-content: center;
+      background-color: blue;
+      opacity: 0.3;
+      color: white;
+      width: 290px;
+      height: 30px;
+      border-radius: 8px;
+    }
+
+    .loginForm input {
+      width: 270px;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    .passwordBox {
+      position: relative;
+    }
+    .hide {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      border: none;
+      background-color: inherit;
+    }
+    .view {
+      position: absolute;
+      right: 40px;
+      top: 10px;
+      border: none;
+      background-color: inherit;
+    }
   }
 }
