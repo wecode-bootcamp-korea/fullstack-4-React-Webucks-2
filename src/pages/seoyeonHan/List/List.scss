@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*header부분*/ 
+header{
+    width: 100%; height: 60px;
+    padding: 10px 20px;
+    background-color: #F6F5EF;
+
+    .webucksLogo{ 
+        float: left;
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+    }
+    nav{
+        float: right;
+        margin-top: 8px;
+        color: gray;
+
+        span{
+            padding: 0px 10px;
+        }
+    }
+}
+
+/*콜드 브루 커피*/
+#coldBrew{
+    position: relative;
+    width: 100%; height: 55px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #F6F5EF;
+
+    h1{
+        float: left;
+        padding-top: 4px;
+        font-size: 18px;
+    }
+    .decafImg{
+        float: left;
+        width: 70px;
+        margin: 0px 5px 0px 10px;
+    }
+    .decafInfo{
+        position: absolute;
+        padding-top: 6px;
+    }
+}
+
+#productColdbrew{
+    width: 100%; height: auto;
+
+    .menuData{
+        float: left;
+        width: 291px;
+        padding: 20px 0px;
+        list-style: none;
+
+        dl{
+            overflow: hidden;
+            margin-bottom: 40px;
+
+            .imgDt{
+                overflow: hidden;
+
+                img{
+                    width: 275px;
+                    transform: scale(1.0);
+                    transition: transform .4s;
+                    
+                &:hover{
+                    transform: scale(1.2);
+                    transition: transform .4s;
+                }
+                }
+            }
+            dd{
+                height: 54px;
+                line-height: 54px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*브루드 커피*/
+#brewed{
+    position: relative;
+    width: 100%; height: 55px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #F6F5EF;
+
+    h1{
+        float: left;
+        padding-top: 4px;
+        font-size: 18px;
+    }
+    .decafImg{
+        float: left;
+        width: 70px;
+        margin: 0px 5px 0px 10px;
+    }
+    .decafInfo{
+        position: absolute;
+        padding-top: 6px;
+    }
+}
+
+#productBrewed{
+    width: 100%; height: auto;
+
+    .menuData{
+        float: left;
+        width: 291px;
+        padding: 20px 0px;
+        list-style: none;
+
+        dl{
+            overflow: hidden;
+            margin-bottom: 40px;
+
+            .imgDt{
+                overflow: hidden;
+
+                img{
+                    width: 275px;
+                    transform: scale(1.0);
+                    transition: transform .4s;
+                    
+                &:hover{
+                    transform: scale(1.2);
+                    transition: transform .4s;
+                }
+                }
+            }
+            dd{
+                height: 54px;
+                line-height: 54px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+

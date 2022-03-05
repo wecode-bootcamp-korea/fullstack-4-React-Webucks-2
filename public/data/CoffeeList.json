@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "커피1",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "커피2",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "커피3",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "커피4",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "커피5",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "커피6",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    },
+    {
+        "id": 7,
+        "name": "커피7",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    },
+    {
+        "id": 8,
+        "name": "커피8",
+        "images": "./public/images/coldbrew/coldbrew1.jpg"
+    }
+]
