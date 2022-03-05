@@ -1,31 +1,31 @@
 [
     {
         "id": 1,
-        "name": "커피1",
+        "name": "Coffee1",
         "price": 2000,
         "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 2,
-        "name": "커피2",
+        "name": "Coffee2",
         "price": 2500,
         "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 3,
-        "name": "커피3",
+        "name": "Coffee3",
         "price": 3000,
         "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 4,
-        "name": "커피4",
+        "name": "Coffee4",
         "price": 3500,
         "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 5,
-        "name": "커피5",
+        "name": "Coffee5",
         "price": 4000,
         "imgUrl":"../images/cb-01.jpg"
     }
