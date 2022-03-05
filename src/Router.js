@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // 송정석's 컴포넌트
 import LoginJeongseok from "./pages/jeongseoksong/Login/Login";
-import MainJeongseok from "./pages/jeongseoksong/Main/Main";
+import MainJeongseok from "./pages/jeongseoksong/List/List";
 import DetailJeongseok from "./pages/jeongseoksong/Detail/Detail";
 
 
