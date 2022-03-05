@@ -35,8 +35,12 @@ function CoffeeReview(){
 
 
 function CoffeeInfo(){
+
     const [coffeeDetail,setCoffeeDetail] = useState({});
-    useEffect()
+    
+    useEffect(()=>{
+        fetch('/data/:id')
+    },[]);
 return (<section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
             <div className="coffee-img-wrap">

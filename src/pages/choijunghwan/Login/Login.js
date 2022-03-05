@@ -4,18 +4,31 @@ import "./Login.scss"
 
 export default function Login (){
   const [state, setState] = useState("");
-  const [opacity, setOpacity] = useState(0.5);
-    const navaigate = useNavigate()
+  const [ready, setReady] = useState(0);
+  const [opacity, setOpacity] = useState(0.3);
+  const navaigate = useNavigate();
+
     const goToDetail = ()=>{
-      navaigate("/detail");
+      if(opacity === 1)
+      navaigate("/main-junghwan");
     }
+
     const handleIdInput = (event)=>{
       setState(event.target.value)
-      console.log(state);
+
+     return state.includes("@") ?  (setReady(0.5), readyCondition(ready)) : (setReady(0),setOpacity(0.3))
     }
+
     const handlePasswordInput = (event)=>{
       setState(event.target.value)
-      console.log(state)
+      
+      return state.length > 4 ? (ready == 0.5 ? setReady(1) : readyCondition(ready))
+       : setOpacity(0.3)
+    }
+
+    const readyCondition = (ready)=>{
+
+     return ready == 1 ? setOpacity(1) : null
     }
 
     return <div className='Login'>
@@ -40,7 +53,7 @@ export default function Login (){
             <button className="hide" >hide</button>
             <button className="view" >view</button>
         </div>
-        <button className="loginBtn" onClick={goToDetail}>로그인</button>
+        <button className="loginBtn" style={{opacity}} onClick={goToDetail}>로그인</button>
       </div>
       <div >비밀번호를 잊으셨나요?</div>
     </section>
