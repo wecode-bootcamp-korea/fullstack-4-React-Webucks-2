@@ -1,21 +1,6 @@
 import React from 'react'
 import './List.scss'
-import TopNav from '../TopNav.js'
-
-function CoffeeCard() {
-    return (
-        <>                        
-            <li>
-                <div className="image-box">
-                <img alt='coffee1' src='images/haeyunjun/coffee1.webp'/>
-                </div>
-                <h3>Irish Cream Cold Brew ♡</h3>
-            </li>
-        </>
-        
-    )
-}
-
+import TopNav from '../components/TopNav.js'
 
 function List() {
     return (
@@ -29,6 +14,7 @@ function List() {
 
             <section className="coldbrew-items">
                 <ul className='coldbrew-items-list'>
+                    <CoffeeCard/>
                     <li>
                         <div className="image-box">
                         <img alt='coffee1' src='images/haeyunjun/coffee1.webp'/>
