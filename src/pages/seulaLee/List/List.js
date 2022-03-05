@@ -5,32 +5,50 @@ import CoffeeCard from '../components/CoffeeCard';
 import React,{useEffect,useState} from 'react';
 
 function List(){
-    const [coffeeList,setCoffeeList]=useState([]);
+    const [coldBrewcoffeeList, setColdBrewCoffeeList] = useState([]);
+    const [brewcoffeeList,setBrewCoffeeList]=useState([]);
+    
     useEffect(()=>{
         fetch(
-            'data/cBrewcoffeeList.json',{method:'GET'})
+            'data/coldBrewcoffeeList.json',{method:'GET'})
             .then(res => res.json())
             .then( data =>{
-                setCoffeeList(data);
+                setColdBrewCoffeeList(data);
+            });     
+    }, []);
+    useEffect(()=>{
+        fetch(
+            'data/brewCoffeeList.json',{method:'GET'})
+            .then(res => res.json())
+            .then( data =>{
+                setBrewCoffeeList(data);
             });     
     },[]);
     return (
-        <div className="wrap-default">
-        <div className="container">
+        <div className="wrap-seula">
+        <div className="container-seula">
         <TopNav />
             <section className="coffee-section cold-brew">
                 <h3 className="coffee-section-title">콜드 브루 커피 ☕</h3>
-                    <ul className="coffee-gall">
-                        {coffeeList.map(list => { 
+                <ul className="coffee-gall">
+                        {coldBrewcoffeeList.map(list => { 
+                             console.log(list);
                             <CoffeeCard key={list.id} coffeeName={list}/>
-                        })}
+                        })
+                        }
                 
                 </ul>
                 
             </section>
             <section className="coffee-section brewed">
                 <h3 className="coffee-section-title">브루드 커피 ☕</h3>
-                
+                    <ul className="coffee-gall">
+                    {brewcoffeeList.map(list => { 
+                             console.log(list);
+                            <CoffeeCard key={list.id} coffeeName={list}/>
+                        })
+                        }
+                    </ul>
             </section>
         </div>
         <Footer/>

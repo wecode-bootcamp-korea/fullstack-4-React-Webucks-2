@@ -3,7 +3,7 @@ import '../List/List.scss';
 
 
 function CoffeeCard({ list }){
-
+   
         return(
             
                     

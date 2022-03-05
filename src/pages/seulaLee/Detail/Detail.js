@@ -120,8 +120,8 @@ function CoffeeDtail(){
 
 const Detail = () => {
     return(
-    <div className="wrap-default">
-        <div className="container">
+    <div className="wrap-seula">
+        <div className="container-seula">
             <TopNav/>
            <CoffeeDtail/>
         </div>
