@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 // 송정석's 컴포넌트
+
 // import LoginJeongseok from "./pages/jeongseoksong/Login/Login";
 // import MainJeongseok from "./pages/jeongseoksong/Main/Main";
 
@@ -24,8 +25,10 @@ import DetailHaeyun from './pages/haeyunjun/Detail/Detail';
 
 
 // 최정환's 컴포넌트
+
 import LoginJunghwan from "./pages/choijunghwan/Login/Login";
 import MainJunghwan from "./pages/choijunghwan/Main/Main";
+
 
 // 한서연's 컴포넌트
 import LoginSeoyeon from './pages/seoyeonHan/Login/Login';
@@ -52,8 +55,11 @@ function Router() {
         <Route path='/list-haeyun' element={<ListHaeyun/>}/>
         <Route path='/detail-haeyun' element={<DetailHaeyun/>}/>
 
-        <Route path="/login-junghwan" element={<LoginJunghwan />} />
-        <Route path="/main-junghwan" element={<MainJunghwan />} />
+
+                <Route path='/login-junghwan' element={<LoginJunghwan/>}/>
+                <Route path='/main-junghwan' element={<MainJunghwan/>}/>
+                <Route path='/detail-junghwan' element={<DetailJunghwan/>}/>
+
 
         <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
         <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>

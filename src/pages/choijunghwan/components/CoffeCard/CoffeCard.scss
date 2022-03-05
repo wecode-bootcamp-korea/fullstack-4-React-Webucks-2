@@ -1,35 +1,38 @@
 $imgWidth: 200px;
 
-.imgBox:hover {
-  overflow: hidden;
-}
-div img:hover {
-  transform: scale(1.2);
-  transition: ease-in 2s;
-}
-.coldbrewSection div img,
-.brewedSection div img {
-  width: imgWidth;
-  height: 140px;
-}
-.productBox {
-  margin: 10px;
-}
+.productBoxJung{
 
-div:not(.box) {
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-}
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: $imgWidth;
-  padding-top: 5px;
-}
+  .imgBox:hover {
+    overflow: hidden;
+  }
+  div img:hover {
+    transform: scale(1.2);
+    transition: ease-in 2s;
+  }
+  .coldbrewSection div img,
+  .brewedSection div img {
+    width: imgWidth;
+    height: 140px;
+  }
+  .productBox {
+    margin: 10px;
+  }
 
-button {
-  background-color: inherit;
-  width: 20%;
+  div:not(.box) {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $imgWidth;
+    padding-top: 5px;
+  }
+
+  button {
+    background-color: inherit;
+    width: 20%;
+  }
 }
