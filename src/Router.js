@@ -31,7 +31,6 @@ import MainJunghwan from "./pages/choijunghwan/Main/Main";
 import LoginSeoyeon from './pages/seoyeonHan/Login/Login';
 import ListSeoyeon from './pages/seoyeonHan/List/List';
 import DetailSeoyeon from './pages/seoyeonHan/Detail/Detail';
-import CardSeoyeon from './pages/seoyeonHan/List/Card';
 
 
 function Router() {
@@ -59,7 +58,6 @@ function Router() {
         <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
         <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>
         <Route path='/Detail-seoyeon' element={<DetailSeoyeon/>}/>
-        <Route path='/Card-seoyeon' element={<CardSeoyeon/>}/>
       </Routes>
     </BrowserRouter>
     );
