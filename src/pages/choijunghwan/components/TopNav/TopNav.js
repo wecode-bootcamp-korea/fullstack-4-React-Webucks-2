@@ -4,7 +4,7 @@ import "./TopNav.scss"
 export default function TopNav (){
 
     return( 
-    <div className="navigator">
+    <div className="navigatorJung">
       <nav >
         <span>Webucks</span>
         <ol className="navLists">

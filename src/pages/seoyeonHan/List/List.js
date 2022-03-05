@@ -66,7 +66,7 @@ function List() {
               </li>
               <Link to='/Detail'>
               <li className="menuData">
-                <dl onClick={()=>{show()}}>
+                <dl onClick={()=>{}}>
                   <dt className="imgDt">
                     <img
                       src="images/coldbrew/coldbrew3.jpg"
