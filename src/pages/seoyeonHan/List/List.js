@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./List.scss";
 import TopNav from "../Nav/TopNav";
-import Card from "./Card";
+import Card from "../List/Card";
 
 function List() {
   const [coffeeList, setCoffeeList] = useState([]);
   const [brewList, setBrewList] = useState([]);
-  
+
   return (
     <div>
       <TopNav />
@@ -24,7 +24,7 @@ function List() {
       <article>
         <ul>
           {coffeeList.map((coffee) => (
-            <Card key={coffee.id} coffee={coffee} />
+            <Card key={coffee.id} coffeeName={coffee} />
           ))}
         </ul>
       </article>
@@ -43,7 +43,7 @@ function List() {
       <article>
         <ul>
           {brewList.map((coffee) => (
-            <Card key={coffee.id} coffee={coffee} />
+            <Card key={coffee.id} coffeeName={coffee} />
           ))}
         </ul>
       </article>
