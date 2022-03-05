@@ -1,42 +1,32 @@
 [
     {
         "id": 1,
-        "name": "커피1",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
+        "name": "Coffee1",
+        "price": 2000,
+        "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 2,
-        "name": "커피2",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
+        "name": "Coffee2",
+        "price": 2500,
+        "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 3,
-        "name": "커피3",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
+        "name": "Coffee3",
+        "price": 3000,
+        "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 4,
-        "name": "커피4",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
+        "name": "Coffee4",
+        "price": 3500,
+        "imgUrl":"../images/cb-01.jpg"
     },
     {
         "id": 5,
-        "name": "커피5",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
-    },
-    {
-        "id": 6,
-        "name": "커피6",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
-    },
-    {
-        "id": 7,
-        "name": "커피7",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
-    },
-    {
-        "id": 8,
-        "name": "커피8",
-        "images": "./public/images/coldbrew/coldbrew1.jpg"
+        "name": "Coffee5",
+        "price": 4000,
+        "imgUrl":"../images/cb-01.jpg"
     }
 ]

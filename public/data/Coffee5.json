@@ -1,0 +1,19 @@
+[{
+    "id": 5,
+    "name": "커피5",
+    "price": 4000,
+    "imgUrl":"../images/cb-01.jpg",
+    "nutrition":{
+        "size":"Tall(톨)",
+        "kcal":130,
+        "na":28,
+        "fat":32,
+        "sugar":38,
+        "protain":10,
+        "caffeine":210
+    },
+    "review":{
+        "user_name": "userID",
+        "user_comment": "userSay"
+    }
+}]
