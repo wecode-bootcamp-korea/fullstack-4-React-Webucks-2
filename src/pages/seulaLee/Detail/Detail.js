@@ -39,7 +39,10 @@ function CoffeeInfo(){
     const [coffeeDetail,setCoffeeDetail] = useState({});
     
     useEffect(()=>{
-        fetch('/data/:id')
+        fetch('data/CbNitroVaCream.json',{method:'GET'})
+        .then(res = res.json())
+        .then(res = setCoffeeDetail(res));
+
     },[]);
 return (<section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
