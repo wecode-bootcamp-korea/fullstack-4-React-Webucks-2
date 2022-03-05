@@ -13,7 +13,7 @@ export default function CoffeCard (data){
         const {coffeeData:{name}} = data;
         const {coffeeData:{image}} = data;
     return( 
-    <div className="productBox">
+    <div className="productBoxJung">
         <div className="imgBox">
           <img alt="coffee" src={image} />
         </div>

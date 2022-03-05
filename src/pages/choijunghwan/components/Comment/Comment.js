@@ -17,7 +17,7 @@ export default function Comment ({id,comment,commentArr,setCommentArr}){
     }
 
     return(
-    <li>
+    <li className="liJung">
         <span className="nickname">익명</span>
         <span className="comment">{comment}</span>
         <button className="heartIcon" onClick={toggleHeart}>

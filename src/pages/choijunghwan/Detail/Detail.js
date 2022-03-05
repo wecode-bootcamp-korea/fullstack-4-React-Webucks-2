@@ -31,14 +31,9 @@ export default function Detail () {
     setInput("");
   }
 
-  const deleteComment = (id) =>{
-    setCommentArr(commentArr.filter(i=>i.id !== id));
-    console.log(commentArr.map(i=>i.id))
-    console.log(commentArr)
-  }
 
   return (
-    <div className='Detail'>
+    <div className='DetailJung'>
         <div className="bigContainer">
         <TopNav/>
         <span className="productCategory">콜드 브루</span>

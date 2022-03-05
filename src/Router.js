@@ -31,9 +31,9 @@ function Router() {
     return (
         <BrowserRouter>
             <Routes>
-               {/*} <Route path='/login-jeongseok' element={<LoginJeongseok/>}/>
+                <Route path='/login-jeongseok' element={<LoginJeongseok/>}/>
                 <Route path='/main-jeongseok' element={<MainJeongseok/>}/>
-    */}
+
                 <Route path='/login-kyungwon' element={<LoginKyungwonlee/>}/>
                 <Route path='/main-kyungwon' element={<MainKyungwonlee/>}/>
 
