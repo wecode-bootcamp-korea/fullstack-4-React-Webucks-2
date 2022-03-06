@@ -4,12 +4,13 @@ import './Detail.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import {useState,useEffect} from 'react'
+import { useParams } from 'react-router-dom';
 
 export function IconHeart() {
     return <FontAwesomeIcon icon = {faHeart}/>;
 }
 
-function CoffeeReview(){
+export function CoffeeReview(){
     
     return (
         <div className="coffee-review">
@@ -34,31 +35,83 @@ function CoffeeReview(){
 }
 
 
-function CoffeeInfo(){
 
-   
+const Detail = () => {
+    const params = useParams();
+    const [coffeeDetail, setCoffeeDetail] = useState({
+        id: '',
+        cofeeDetail: {
+            name: '',
+            eng_name: '',
+            description: '',
+            imgUrl: '/images/cb-01.jpg',
+            imgAlt: '',
+            isLike: false,
+            isIce: false,     
+            size:"Tall(톨)",
+            volume:['',''],
+            kcal:0,
+            na:0,
+            fat:0,
+            sugar:0,
+            protain:1,
+            caffeine:232,
+            alergy:[],     
+            user_name: '',
+            user_comment:''
+           
+        }
+    }
+);
+    
+    useEffect(()=>{
+        fetch(`/data/${params.id}.json`,{method:'GET'})
+        .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setCoffeeDetail(data)
+            });
+    },[]);
+    return(
+    <div className="wrap-seula">
+        <div className="container-seula">
+        <TopNav />
+        <article className="coffee-detail">
+        <h2 className="hidden">커피 상세정보</h2>
+        <h3 className="coffee-section-default">콜드 브루</h3>
+        <span className="page-route">홈 &gt; MENU &gt; 음료 &gt; 에스프레소 &gt; 나이트로 바닐라 크림</span>
+                <CoffeeInfo data={coffeeDetail}/>
+    </article>
+               
+        </div>
+        <Footer/>
+    </div>
+    );
+}
+function CoffeeInfo({ data }) {
+    console.log(data.volume)
     return (
         <section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
             <div className="coffee-img-wrap">
-                <img src="images/cb-01.jpg" alt="cb-01" />
+                <img src={data.imgUrl} alt={data.imgAlt} />
             </div>
             <div className="coffee-info">
                 <h3 className="coffee-info-title">
                     <ul className="coffee-info-txt">
                         <li>
-                            <p>나이트로 바닐라 크림</p>
+                            <p>{data.name}</p>
                         </li>
-                        <li> <small>Nitro Vanilla Cream</small></li>
+                        <li> <small>{data["eng_name"] }</small></li>
                     </ul>
                     <span className="coffee-info-like"><IconHeart/></span>
                 </h3>
-                <div className="coffee-info-desc">부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!</div>
+                <div className="coffee-info-desc">{data.description }</div>
                 
                 <div className="coffee-info-nutri">
                     <div className="coffee-nutri-head">
                         <p>제품 영양 정보</p>
-                        <span>Tall(톨) / 355ml (12 fl oz)</span>
+                        <span>{data.size}/ 355ml (12 fl oz)</span>
                     </div>
                     <div className="coffee-nutri-cnt">
                         <div className="nutri1">
@@ -100,65 +153,6 @@ function CoffeeInfo(){
         </section>);
 
 }
-function CoffeeDtail(){
-    return(
-        <article className="coffee-detail">
-        <h2 className="hidden">커피 상세정보</h2>
-        <h3 className="coffee-section-default">콜드 브루</h3>
-        <span className="page-route">홈 &gt; MENU &gt; 음료 &gt; 에스프레소 &gt; 나이트로 바닐라 크림</span>
-        <CoffeeInfo/>
-    </article>
-    );
 
-}
-
-const Detail = () => {
-    const [coffeeDetail, setCoffeeDetail] = useState({
-        id: '',
-        cofeeDetail: {
-            name: '',
-            eng_name: '',
-            description: '',
-            imgUrl: '/images/cb-01.jpg',
-            imgAlt: '',
-            isLike: false,
-            isIce: false,
-            nutrition: {
-                size:"Tall(톨)",
-                volume:[],
-                kcal:0,
-                na:0,
-                fat:0,
-                sugar:0,
-                protain:1,
-                caffeine:232,
-                alergy:[]
-            },
-            review:[ {
-                user_name: '',
-                user_comment:''
-            }]
-        }
-    });
-    
-    useEffect(()=>{
-        fetch('/data/CbNitroVaCream.json',{method:'GET'})
-        .then(res => res.json())
-        .then(data =>{setCoffeeDetail(data)});
-    },[]);
-    return(
-    <div className="wrap-seula">
-        <div className="container-seula">
-            <TopNav />
-                {coffeeDetail.map(function(coffeeData){ console.log(coffeeData)}
-                //(<CoffeeDtail key={coffeeData.id} data={coffeeData} />)
-                )}   
-           
-        </div>
-        <Footer/>
-    </div>
-    );
-}
-
-export {CoffeeReview,CoffeeInfo,CoffeeDtail};
+export {CoffeeInfo};
 export default Detail;
