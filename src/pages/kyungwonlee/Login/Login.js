@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.scss";
 
 function LoginComponent() {
-  //   const LoginBtn = () => {};
+  const [user, setUser] = useState();
+  const handleIdInput = (event) => {
+    setUser(event.target.value);
+  };
+  const handlePwInput = (event) => {
+    setUser(event.target.value);
+  };
   return (
     <div>
       <section className="login-page">
@@ -13,12 +19,14 @@ function LoginComponent() {
             type="text"
             placeholder="전화번호, 사용자 이름 또는 이메일"
             required
+            onChange={handleIdInput}
           />
           <input
             className="password input-kyungwon"
             type="password"
             placeholder="비밀번호"
             required
+            onChange={handlePwInput}
           />
           <button className="button" onClick={() => {}} disabled>
             로그인
