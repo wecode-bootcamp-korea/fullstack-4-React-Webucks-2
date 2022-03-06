@@ -8,7 +8,7 @@
         "imgAlt":"cb-01.jpg",
         "isLike":false,
         "isIce":true,
-        "nitrition":{
+        "nutrition":{
             "size":"Tall(톨)",
             "volume":[355,12],
             "kcal":80,
@@ -19,9 +19,9 @@
             "caffeine":232,
             "alergy":["우유"]
         },
-        "review":{
+        "review":[{
             "user_name":"myID",
             "user_comment":"myComment"
-        }
+        }]
     }
 }

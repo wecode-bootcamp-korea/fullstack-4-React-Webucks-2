@@ -36,15 +36,9 @@ function CoffeeReview(){
 
 function CoffeeInfo(){
 
-    const [coffeeDetail,setCoffeeDetail] = useState({});
-    
-    /*useEffect(()=>{
-        fetch('data/CbNitroVaCream.json',{method:'GET'})
-        .then(res = res.json())
-        .then(res = setCoffeeDetail(res));
-
-    },[]);*/
-return (<section className="coffee-info-container">
+   
+    return (
+        <section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
             <div className="coffee-img-wrap">
                 <img src="images/cb-01.jpg" alt="cb-01" />
@@ -119,11 +113,47 @@ function CoffeeDtail(){
 }
 
 const Detail = () => {
+    const [coffeeDetail, setCoffeeDetail] = useState({
+        id: '',
+        cofeeDetail: {
+            name: '',
+            eng_name: '',
+            description: '',
+            imgUrl: '/images/cb-01.jpg',
+            imgAlt: '',
+            isLike: false,
+            isIce: false,
+            nutrition: {
+                size:"Tall(톨)",
+                volume:[],
+                kcal:0,
+                na:0,
+                fat:0,
+                sugar:0,
+                protain:1,
+                caffeine:232,
+                alergy:[]
+            },
+            review:[ {
+                user_name: '',
+                user_comment:''
+            }]
+        }
+    });
+    
+    useEffect(()=>{
+        fetch('/data/CbNitroVaCream.json',{method:'GET'})
+        .then(res => res.json())
+        .then(data =>{setCoffeeDetail(data)});
+    },[]);
     return(
     <div className="wrap-seula">
         <div className="container-seula">
-            <TopNav/>
-           <CoffeeDtail/>
+            <TopNav />
+                {coffeeDetail.map(function(coffeeData){ console.log(coffeeData)}
+                //(<CoffeeDtail key={coffeeData.id} data={coffeeData} />)
+                )}   
+           
         </div>
         <Footer/>
     </div>
