@@ -13,21 +13,15 @@ function Login() {
 
     return (
         <div>
-
             <section className="login">
-
-                <img src={"./images/webucks_logo.JPG"} className="loginLogo" alt="LOGO" / >
-
+            <div className="loginLogo">WeBucks</div>
                     <div action="" className="inputForm">
                         <input id="id" type="text" className="loginId" tabindex="1" placeholder="전화번호, 사용자 이름 또는 이메일" / >
                         <input id="pw" type="password" className="loginPasswd" tabindex="2" placeholder="비밀번호" / >
                     </div>
-
                             <button type="button" className="loginButton" disabled="disabled">로그인</button>
                             <div onClick= { () => goTosignup() } className="lostPasswd">비밀번호를 잊으셧나요?</div>
             </section>
-
-
         </div>
         )
 }

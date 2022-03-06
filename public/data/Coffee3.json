@@ -1,0 +1,19 @@
+[{
+    "id": 3,
+    "name": "커피3",
+    "price": 3000,
+    "imgUrl":"../images/cb-01.jpg",
+    "nutrition":{
+        "size":"Tall(톨)",
+        "kcal":90,
+        "na":18,
+        "fat":10,
+        "sugar":12,
+        "protain":2,
+        "caffeine":180
+    },
+    "review":{
+        "user_name": "userID",
+        "user_comment": "userSay"
+    }
+}]
