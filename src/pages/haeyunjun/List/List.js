@@ -1,6 +1,6 @@
 import React from 'react'
 import './List.scss'
-import TopNav from '../TopNav.js'
+import NavBar from '../components/TopNav.js'
 
 function CoffeeCard() {
     return (
@@ -20,9 +20,9 @@ function CoffeeCard() {
 function List() {
     return (
         <div>
-            <TopNav/>
+            <NavBar/>
 
-            <section className='title-bar'>
+            <section className='haeyun-title-bar'>
                 <h1 className="coffee-title">콜드 브루 커피 ☕ </h1>
                 <h2>디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)</h2>
             </section>
@@ -104,7 +104,7 @@ function List() {
                 </ul>
             </section>
 
-            <section className='title-bar'>
+            <section className='haeyun-title-bar'>
                 <h1 className="coffee-title">브루드 커피 ☕ </h1>
                 <h2>디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)</h2>
             </section>
@@ -119,19 +119,19 @@ function List() {
                     </li>
                     <li>
                         <div className="image-box">
-                        <img alt='coffee10' src='images/haeyunjun/coffee12.jpeg'/>
+                            <img alt='coffee10' src='images/haeyunjun/coffee12.jpeg'/>
                         </div>
                         <h3>Ice Americano ♡</h3>
                     </li>  
                     <li>
-                        <div className="image-box hidden">
-                        {/* <img alt='coffee11' src='images/haeyunjun/coffee11.jpeg'/> */}
+                        <div className="image-box">
+                            {/* <img alt='coffee10' src='images/haeyunjun/coffee12.jpeg'/> */}
                         </div>
                         <h3></h3>
                     </li>
                     <li>
-                        <div className="image-box hidden">
-                        {/* <img alt='coffee8' src='images/haeyunjun/coffee8.jpeg'/> */}
+                        <div className="image-box">
+                            {/* <img alt='coffee10' src='images/haeyunjun/coffee12.jpeg'/> */}
                         </div>
                         <h3></h3>
                     </li>

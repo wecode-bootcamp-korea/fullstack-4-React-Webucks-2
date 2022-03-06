@@ -1,11 +1,11 @@
 import React from 'react'
 import './Detail.scss'
-import TopNav from '../TopNav.js'
+import NavBar from '../components/TopNav.js'
 
 function Detail() {
     return (
         <>
-            <TopNav/>
+            <NavBar/>
         </>
     )
 }
