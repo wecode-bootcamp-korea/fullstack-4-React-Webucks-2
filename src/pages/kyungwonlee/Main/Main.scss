@@ -28,25 +28,4 @@
   grid-row-gap: var(--padding);
   margin-bottom: var(--padding);
   padding: 0 var(--padding);
-
-  .coffee {
-    text-align: center;
-
-    .img-kyungwon {
-      overflow: hidden;
-
-      img {
-        max-width: 100%;
-        transition: all 0.3s ease 0s;
-      }
-
-      :hover {
-        transform: scale(1.05);
-        cursor: pointer;
-      }
-    }
-    .name {
-      padding: calc(var(--padding) / 2);
-    }
-  }
 }

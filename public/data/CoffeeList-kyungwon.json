@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "블랙 커피",
+        "images": "img/black-coffee.jpg"
+    },
+    {
+        "id": 2,
+        "name": "밀크 커피",
+        "images": "img/black-coffee.jpg"
+    },
+    {
+        "id": 3,
+        "name": "모카 커피",
+        "images": "img/mocha-coffee.jpg"
+    },
+    {
+        "id": 4,
+        "name": "바닐라 커피",
+        "images": "img/vanila-coffee.jpg"
+    },
+    {
+        "id": 5,
+        "name": "카라멜 커피",
+        "images": "img/caramel-coffee.jpg"
+    },
+    {
+        "id": 6,
+        "name": "커피 그리고 디저트",
+        "images": "img/dessert-coffee.jpg"
+    },
+    {
+        "id": 7,
+        "name": "드립 커피",
+        "images": "img/drip-coffee.jpg"
+    },
+    {
+        "id": 8,
+        "name": "푸지오아 커피",
+        "images": "img/fusioa-coffee.jpg"
+    },
+    {
+        "id": 9,
+        "name": "핫초코",
+        "images": "img/hot-choco.jpg"
+    },
+    {
+        "id": 10,
+        "name": "매직 커피",
+        "images": "img/magic-coffee.jpg"
+    }
+]
