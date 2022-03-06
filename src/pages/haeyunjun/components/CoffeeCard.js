@@ -13,7 +13,7 @@ export default function CoffeeCard(data) {
         </li>
     )
 }
-
+//슬랙에 물어볼것...정환님 커피카드 코드에 image, name 어디서 가져오는건지?
 //정환
 // return( 
 //     <div className="productBoxJung">
