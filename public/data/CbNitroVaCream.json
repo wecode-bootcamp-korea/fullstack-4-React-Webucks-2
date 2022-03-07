@@ -1,27 +1,23 @@
 {
     "id":"CbNitroVaCream",
-    "coffeeDetail":{
-        "name" :"나이트로 바닐라 크림",
-        "eng_name" :"Nitro Vanilla Cream",
-        "description":"부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!",
-        "imgUrl":"../images/cb-01.jpg",
-        "imgAlt":"cb-01.jpg",
-        "isLike":false,
-        "isIce":true,
-        "nitrition":{
-            "size":"Tall(톨)",
-            "volume":[355,12],
-            "kcal":80,
-            "na":40,
-            "fat":2,
-            "sugar":10,
-            "protain":1,
-            "caffeine":232,
-            "alergy":["우유"]
-        },
-        "review":{
-            "user_name":"myID",
-            "user_comment":"myComment"
-        }
+    "name" :"나이트로 바닐라 크림",
+    "eng_name" :"Nitro Vanilla Cream",
+    "description":"부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!",
+    "imgUrl":"../images/cb-01.jpg",
+    "imgAlt":"cb-01.jpg",
+    "isLike":false,
+    "isIce":true,
+    "size":"Tall(톨)",
+    "volume":[355,12],
+    "kcal":80,
+    "na":40,
+    "fat":2,
+    "sugar":10,
+    "protain":1,
+    "caffeine":232,
+    "alergy":["우유"],
+    "review":{
+        "user_name":"myID",
+        "user_comment":"myComment"
     }
 }

@@ -9,8 +9,7 @@ function List(){
     const [brewcoffeeList,setBrewCoffeeList]=useState([]);
     
     useEffect(()=>{
-        fetch(
-            'data/coldBrewcoffeeList.json',{method:'GET'})
+        fetch('data/coldBrewcoffeeList.json',{method:'GET'})
             .then(res => res.json())
             .then( data =>{
                 setColdBrewCoffeeList(data);
