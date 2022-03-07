@@ -19,6 +19,9 @@ function Login() {
     setPw(e.target.value);
   };
 
+  //email check
+
+  //pwd check
   return (
     <div id="webucksLoginPage">
       <img src="images/webucksLogo.PNG" alt="위벅스 로고"/>
@@ -28,6 +31,7 @@ function Login() {
         type="text" 
         placeholder="전화번호, 사용자 이름 또는 이메일"
         onChange={handleIdInput}
+        // onKeyUp={passId}
         />
 
         <input 
@@ -35,6 +39,7 @@ function Login() {
         type="password" 
         placeholder="비밀번호"
         onChange={handlePwInput}
+        // onKeyUp={passPwd}
         />
         <Link to='/List'><button onClick={()=>{view()}}>로그인</button></Link>
       </div>

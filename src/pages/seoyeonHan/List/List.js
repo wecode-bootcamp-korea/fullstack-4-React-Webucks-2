@@ -5,13 +5,21 @@ import Card from "../List/Card";
 
 function List() {
   const [coffeeList, setCoffeeList] = useState([]);
-  const [brewList, setBrewList] = useState([]);
+  // const [brewList, setBrewList] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/seoyeonData/CoffeeList.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setCoffeeList(data);
+      });
+  }, []);
 
   return (
     <div>
       <TopNav />
       <div className="cateBar">
-        <div className="cateName">콜드 브루 커피</div>
+        <div className="coldBrewName">콜드 브루 커피</div>
         <img
           className="decafImg"
           src="images/logo_decaf.png"
@@ -20,17 +28,18 @@ function List() {
         <div className="decafInfo">
           디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
         </div>
+        <article>
+          <ul>
+            {coffeeList.map((coffee) => (
+              <Card coffee={coffee} />
+            ))}
+          </ul>
+        </article>
       </div>
-      <article>
-        <ul>
-          {coffeeList.map((coffee) => (
-            <Card key={coffee.id} coffeeName={coffee} />
-          ))}
-        </ul>
-      </article>
 
+      <TopNav />
       <div className="cateBar">
-        <div className="cateName">콜드 브루 커피</div>
+        <div className="brewedName">브루드 커피</div>
         <img
           className="decafImg"
           src="images/logo_decaf.png"
@@ -39,14 +48,14 @@ function List() {
         <div className="decafInfo">
           디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
         </div>
+        <article>
+          <ul>
+            {coffeeList.map((coffee) => (
+              <Card coffee={coffee} />
+            ))}
+          </ul>
+        </article>
       </div>
-      <article>
-        <ul>
-          {brewList.map((coffee) => (
-            <Card key={coffee.id} coffeeName={coffee} />
-          ))}
-        </ul>
-      </article>
     </div>
   );
 }

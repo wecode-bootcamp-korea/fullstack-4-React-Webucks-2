@@ -1,44 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    width: 80%;
-    margin: 0 auto;
-}
-
-/*header부분*/ 
-header{
-    width: 100%; height: 60px;
-    padding: 10px 20px;
-    background-color: #F6F5EF;
-
-    .webucksLogo{ 
-        float: left;
-        font-family: 'Dancing Script', cursive;
-        font-size: 35px;
-    }
-    nav{
-        float: right;
-        margin-top: 8px;
-        color: gray;
-
-        span{
-            padding: 0px 10px;
-        }
-    }
-}
 
 /*콜드 브루 커피*/
-#coldBrew{
+.cateBar{
     position: relative;
     width: 100%; height: 55px;
     margin-top: 25px;
     padding: 10px 20px;
     background-color: #F6F5EF;
 
-    h1{
+    .coldBrewName{
         float: left;
         padding-top: 4px;
         font-size: 18px;
@@ -99,7 +68,7 @@ header{
     padding: 10px 20px;
     background-color: #F6F5EF;
 
-    h1{
+    .brewedName{
         float: left;
         padding-top: 4px;
         font-size: 18px;
