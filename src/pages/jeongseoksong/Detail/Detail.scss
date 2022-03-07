@@ -1,0 +1,160 @@
+section {
+    background-color: white;
+    width: 1000px;
+}
+
+section h1 {
+    font-size: 24px;
+}
+
+section h3 {
+    font-size: 12px;
+    display: flex;
+    justify-content: end;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.mainImg {
+    width: 450px;
+    height: 500px;
+}
+
+.discription {
+    margin-left: 50px;
+    width: 500px;
+}
+
+.coffeeName h3 {
+    margin-top: 4px;
+    justify-content: left;
+}
+
+.nameBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.coffeediscription {
+    border-top : 2px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 14px;
+}
+
+.nutritioninfo {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #efefef;
+    padding-top: 12px;
+}
+
+.nutritiondetail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-top: 2px solid #efefef;
+    padding-top: 18px;
+}
+
+.nutritiondetail1 {
+    height: 120px;
+    width: 250px;
+    border-right: 2px dashed #efefef;
+}
+
+.nutritiondetail2 {
+    width: 250px;
+}
+
+.kcal {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.fat {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.protein {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.natrium {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.sugars {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.caffeine {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.allergies {
+    background-color: #efefef;
+    height: 36px;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+.review {
+    padding: 0px 0px 12px 0px;
+    border-bottom: 1px solid gray;
+}
+
+.reviewcomment {
+    display: block;
+    justify-content: left;
+    font-size: 12px;
+    padding: 12px 0px;
+}
+
+.nickName {
+    font-weight: bold;
+}
+
+.reviewForm {
+    color: gray;
+    background-color: #efefef;
+    font-size: 12px;
+    height: 30px;
+    padding:6px;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+footer {
+    width: 1000px;
+    color: white;
+}
+
+footer ol {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 12px;
+}
+
+footer ol li {
+    padding: 8px 0px;
+}
