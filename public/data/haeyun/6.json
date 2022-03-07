@@ -1,0 +1,23 @@
+{
+  "id": 6,
+  "name": "시그니처 더 블랙 콜드 브루",
+  "EnglishName": "Signature The Black Cold Brew",
+  "desc": "콜드 브루 전용 원두를 차가운 물로 14시간 동안 추출하여 부드럽고 진한 풍미의 콜드브루를 딜리버리로 원하는 곳에서 편하게 즐겨보세요 (전용 리유저블 보틀 /500ml)",
+  "size": "Bottle (보틀)",
+  "volume": "500ml (17fl oz)",
+  "nutrition": [
+    { "id": 1, "name": "1회 제공량 (kcal)", "amount": 25 },
+    { "id": 2, "name": "포화지방 (g)", "amount": 0 },
+    { "id": 3, "name": "단백질 (g)", "amount": 0 },
+    { "id": 4, "name": "나트륨 (mg)", "amount": 50 },
+    { "id": 5, "name": "당류 (g)", "amount": 0 },
+    { "id": 6, "name": "카페인 (mg)", "amount": 680 }
+  ],
+  "allergie": null,
+  "comments": [
+    { "id": 1, "writer": "subin", "comment": "짱이에요!" },
+    { "id": 2, "writer": "haeun", "comment": "맛있어요!" },
+    { "id": 3, "writer": "dami", "comment": "좋아요!" }
+  ],
+  "imgURL": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346334.jpg"
+}

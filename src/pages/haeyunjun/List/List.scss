@@ -87,24 +87,6 @@ h3 {
     font-family: 'Gothic', sans-serif;
 }
 
-.image-box {
-    height: 200px;
-    width: 200px;
-    margin: 30px 0;
-    overflow: hidden;
-}
 
-
-.image-box img {
-    transition: all 0.2s linear;
-    
-}
-.image-box img:hover {
-    transform: scale(1.1);
-}
-
-.image-box .hidden {
-    visibility: hidden;
-}
 
 
