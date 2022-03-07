@@ -43,7 +43,7 @@ h3 {
     display: flex;
     align-items: center;
     padding: 25px 20px;
-    margin: 10px 0;
+    margin: 20px 0;
     background-color: #f4f4f2;
     font-family: sans-serif;
 }
@@ -72,7 +72,7 @@ h3 {
     font-family: 'Gothic', sans-serif;
 }
 
-.brewed-coffee-items {
+.brewed-items-list {
     display: grid;
     grid-template-columns: repeat(4, 0fr);
     justify-content: space-between;

@@ -5,7 +5,7 @@ function CoffeeCard ({coffee}) {
     return( 
         <li>
             <div className="image-box">
-                <img alt='coffee' src={coffee.imgUrl}/>
+                <img alt={coffee.name} src={coffee.imgUrl}/>
             </div>
             <div>
                 {coffee.name}
