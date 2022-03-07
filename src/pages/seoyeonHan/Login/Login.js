@@ -1,4 +1,5 @@
 import "./Login.scss";
+import "../List/List"
 import React, { useState } from "react";
 
 function Login() {
@@ -14,7 +15,7 @@ function Login() {
   };
 
   const goToList = () => {
-    this.props.history.push('../List/List');
+    this.props.history.push('./List.js');
   };
 
 
