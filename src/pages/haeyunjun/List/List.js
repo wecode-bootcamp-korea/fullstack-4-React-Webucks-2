@@ -36,7 +36,6 @@ function List() {
                     :''}
                 </ul>
             </section>
-
             
             {/* <!-- section2 bar --> */}
             <section className='haeyun-title-bar'>
