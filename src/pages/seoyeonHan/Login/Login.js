@@ -1,47 +1,52 @@
 import './Login.scss';
-import List from '../List/List';
-import {Link} from 'react-router-dom';
-import { useState } from "react";
+import {useNavigate} from 'react-router-dom';
+import React, {useState} from "react";
 
-function Login() {
-  function view(){
-    return (
-      <List/>
-    )
-  };
-  const [id, setId] = useState("");
-  const [pw, setPw] = useState("");
+  function Login(){
+    const [inputId, setInputId] = useState('');
+    const [inputPw, setInputPw] = useState('');
+  
 
   const handleIdInput = (e)=>{
-    setId(e.target.value);
+      setInputId(e.target.value)
   };
   const handlePwInput = (e) => {
-    setPw(e.target.value);
+      setInputPw(e.target.value)
   };
+  
+  const navigate = useNavigate();
+  this.goToList =()=>{
+    navigate('../List/List');
+  }
 
-  //email check
-
-  //pwd check
   return (
     <div id="webucksLoginPage">
       <img src="images/webucksLogo.PNG" alt="위벅스 로고"/>
       <div id="main">
         <input 
-        id="idValue" 
+        id="inputId" 
         type="text" 
         placeholder="전화번호, 사용자 이름 또는 이메일"
         onChange={handleIdInput}
-        // onKeyUp={passId}
         />
 
         <input 
-        id="pwdValue" 
+        id="inputPw" 
         type="password" 
         placeholder="비밀번호"
         onChange={handlePwInput}
-        // onKeyUp={passPwd}
         />
-        <Link to='/List'><button onClick={()=>{view()}}>로그인</button></Link>
+          <button 
+          className={
+            inputId.includes('@') && inputPw.length>5
+            ? 'buttonAble'
+            : 'buttonDisAble'
+          }
+          type="button"
+          onClick={this.goToList}
+          >
+            로그인
+          </button>
       </div>
       <div id="forgotPwd">비밀번호를 잊으셨나요?</div>
     </div>
