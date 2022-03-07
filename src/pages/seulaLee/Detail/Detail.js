@@ -49,7 +49,7 @@ const Detail = () => {
             isLike: false,
             isIce: false,     
             size:"Tall(톨)",
-            volume:['',''],
+            volume:[],
             kcal:0,
             na:0,
             fat:0,
@@ -62,14 +62,12 @@ const Detail = () => {
            
         }
     }
-);
-    
+); 
     useEffect(()=>{
         fetch(`/data/${params.id}.json`,{method:'GET'})
         .then(res => res.json())
             .then(data => {
-                console.log(data)
-                setCoffeeDetail(data)
+                setCoffeeDetail(data)      
             });
     },[]);
     return(
@@ -89,7 +87,7 @@ const Detail = () => {
     );
 }
 function CoffeeInfo({ data }) {
-    console.log(data.volume)
+   
     return (
         <section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
@@ -111,7 +109,7 @@ function CoffeeInfo({ data }) {
                 <div className="coffee-info-nutri">
                     <div className="coffee-nutri-head">
                         <p>제품 영양 정보</p>
-                        <span>{data.size}/ 355ml (12 fl oz)</span>
+                        <span>{data.size}/ {data.volume[0]}ml ({data.review["user_name"]}fl oz)</span>
                     </div>
                     <div className="coffee-nutri-cnt">
                         <div className="nutri1">
