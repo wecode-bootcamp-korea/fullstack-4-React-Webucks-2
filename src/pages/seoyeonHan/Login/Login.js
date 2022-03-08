@@ -1,6 +1,7 @@
 import "./Login.scss";
 import "../List/List"
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 
 function Login() {
   const [inputId, setInputId] = useState("");
@@ -15,13 +16,12 @@ function Login() {
   };
 
   const goToList = () => {
-    this.props.history.push('./List.js');
+    <Link to ='http://localhost:3000/List-seoyeon'></Link>
   };
-
 
   return (
     <div className="webucksLoginPage">
-      <img className="webucksImg" src="images/webucksLogo.PNG" alt="위벅스 로고" />
+      <img className="webucksImg" src="images/webucksLogo.PNG" alt="webucksLogos" />
       <div className="main">
         <input className="inputField"
           value={inputId}
