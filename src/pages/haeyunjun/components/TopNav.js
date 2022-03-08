@@ -1,8 +1,9 @@
 import React from 'react'
+import './TopNav.scss'
 
 function NavBar(){
     return (
-        <nav className="navigation-bar">
+        <nav className="haeyun-navigation-bar">
             <h1 className="webucks-logo">WeBucks</h1>
             <ul className="menu-bar">
                 <li className="menu-list">COFFEE</li>
