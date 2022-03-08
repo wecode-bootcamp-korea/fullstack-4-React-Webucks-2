@@ -25,32 +25,22 @@
         background-color:#efefef;
         }
 
-        .buttonAble{
+        .loginBtn{
             color: white;
             background-color: rgb(77, 139, 211);
-            border: 1px solid #cbe3f2;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-        }
-        .buttonDisable{
-            color: white;
-            background-color: rgb(77, 139, 211);
-            border: 1px solid #cbe3f2;
             opacity: 0.5;
+            border: 1px solid #cbe3f2;
             font-size: 14px;
             font-weight: bold;
-            cursor: pointer;
             width: 100%;
             padding: 12px;
             margin-bottom: 15px;
             border-radius: 5px;
         }
 
+        .btnDisabled{
+            opacity: 0.2;
+        }
 
         .forgotPwd{
             position: absolute;

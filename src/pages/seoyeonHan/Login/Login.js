@@ -1,11 +1,13 @@
 import "./Login.scss";
 import "../List/List"
 import React, { useState } from "react";
-import { navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [inputId, setInputId] = useState("");
   const [inputPw, setInputPw] = useState("");
+
+  const isValidInput = inputId.includes("@") && inputPw.length >5;
 
   const handleIdInput = (e) => {
     setInputId(e.target.value);
@@ -16,10 +18,9 @@ function Login() {
   };
 
   const navigate = useNavigate();
+
   const goToList = () => {
-    navigate(
-      '/List-seoyeon',{inputId, inputPw}
-    )
+    navigate('/List-seoyeon');
   };
 
   return (
@@ -39,15 +40,11 @@ function Login() {
           placeholder="비밀번호"
           onChange={handlePwInput}
         />
-        <button
-          className={
-            inputId.includes("@") && inputPw.length >5
-            ? 'buttonAble'
-            : 'buttonDisable'
-          }
-          type="button"
-          onClick={goToList}
-        >
+
+        <button 
+        type='button'
+        className={`loginBtn ${isValidInput ? "" : "btnDisabled"}`} 
+        onClick={goToList}>
           로그인
         </button>
       </div>

@@ -1,62 +1,41 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*header부분*/
-header{
-    width: 100%; height: 60px;
-    padding: 10px 20px;
-    background-color: #F6F5EF;
+.detailContent{
+    width: 80%; 
+    margin-left: 150px;
 
-    .webucksLogo{ 
-        float: left;
-        font-family: 'Dancing Script', cursive;
-        font-size: 35px;
-        color: black;
-    }
-    nav{
-        float: right;
-        margin-top: 8px;
-        color: gray;
+    .topMain{
+        width: 100%; height: 60px;
 
-        span{
-            padding: 0px 10px;
+        .topMainTitle{
+            padding: 10px 0px 0px 0px;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .topMainSpan{
+            float: right;
+            color: gray;
+            font-size: 13px;
         }
     }
-}
 
-#topMain{
-    width: 100%; height: 60px;
-
-    h1{
-        padding: 5px 0px 0px 5px;
-        font-size: 25px;
-    }
-    span{
-        float: right;
-        color: gray;
-        font-size: 13px;
-    }
-}
-
-main{
-    img{
-        width: 275;
+    .mainImg{
+        width: 350px; height: 350px;
         float: left;
         padding-right: 25px;
     }
-    #mainContentBox{
+
+    .mainContentBox{
         overflow: hidden;
 
-        #dolceColdBrew{
+        .dolceColdBrew{
             height: 60px;
             position: relative;
             border-bottom: 2px solid black;
 
-            h2{
+            .coffeeTitleSecond{
                 position: absolute;
                 display: inline-block;
+                font-weight: 700;
+
             }
             span{
                 position: absolute;
@@ -76,7 +55,7 @@ main{
     font-size: 14px;
 }
 
-#dolceHeader{
+.dolceHeader{
     height: 45px;
     border-bottom: 1px solid #ababab;
 
@@ -85,17 +64,17 @@ main{
         font-weight: 700;
         color: black;
     }
-    #nutrient{
+    .nutrient{
         float: left;
         padding: 13px;
     }
-    #size{
+    .size{
         float: right;
         padding: 13px;
     }
 }
 
-#dolceContent{
+.dolceContent{
     display: flex;
     width: 100%;
     height: 95px;
@@ -113,7 +92,7 @@ main{
     }
 }
 
-#firstContentBox{
+.firstContentBox{
     width: 100%;
     margin: 10px 0px;
     padding: 0px 10px;
@@ -122,7 +101,7 @@ main{
     border-right: 1px dotted #ababab;
 }
 
-#secondContentBox{
+.secondContentBox{
     width: 100%;
     margin: 10px 0px;
     padding: 0px 10px;
@@ -130,7 +109,7 @@ main{
     font-size: 14px;
 }
 
-#dolceFooter{
+.dolceFooter{
     width: 100%; height: 41px;
     background-color: #F4F4F2;
 
@@ -142,7 +121,7 @@ main{
     }
 }
 
-#dolceColdBrewReview{
+.dolceColdBrewReview{
     padding-top: 25px;
 
     h3{
@@ -164,7 +143,7 @@ main{
     }
 }
 
-#reviewInput{
+.reviewInput{
     width: 100%; height: 33px;
     background-color: #F4F4F2;
 
@@ -172,4 +151,4 @@ main{
         float: left;
         padding: 5px;
     }
-}
+    }
