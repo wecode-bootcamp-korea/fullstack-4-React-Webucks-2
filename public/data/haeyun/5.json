@@ -1,0 +1,23 @@
+{
+  "id": 5,
+  "name": "벨벳 다크 모카 나이트로",
+  "EnglishName": "Velvet Dark Mocha Nitro",
+  "desc": "다크 초콜릿 모카의 진한 바디감과 함께 헤이즐넛 향과 달콤한 카라멜 크림 폼으로 벨벳같은 부드러움까지 살린 리저브 나이트로 커피",
+  "size": "Tall (톨)",
+  "volume": "355 (12fl oz)",
+  "nutrition": [
+    { "id": 1, "name": "1회 제공량 (kcal)", "amount": 150 },
+    { "id": 2, "name": "포화지방 (g)", "amount": 6 },
+    { "id": 3, "name": "단백질 (g)", "amount": 2 },
+    { "id": 4, "name": "나트륨 (mg)", "amount": 15 },
+    { "id": 5, "name": "당류 (g)", "amount": 17 },
+    { "id": 6, "name": "카페인 (mg)", "amount": 190 }
+  ],
+  "allergie": "milk",
+  "comments": [
+    { "id": 1, "writer": "subin", "comment": "짱이에요!" },
+    { "id": 2, "writer": "haeun", "comment": "맛있어요!" },
+    { "id": 3, "writer": "dami", "comment": "좋아요!" }
+  ],
+  "imgURL": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003509]_20210322093452556.jpg"
+}
