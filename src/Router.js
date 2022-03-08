@@ -9,6 +9,7 @@ import LoginJeongseok from "./pages/jeongseoksong/Login/Login";
 import DetailJeongseok from "./pages/jeongseoksong/Detail/Detail";
 
 
+
 // 이경원's 컴포넌트
 import LoginKyungwonlee from "./pages/kyungwonlee/Login/Login";
 import MainKyungwonlee from "./pages/kyungwonlee/Main/Main";
@@ -44,6 +45,7 @@ function Router() {
         <Route path="/login-jeongseok" element={<LoginJeongseok />} />
         
         <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
+
 
         <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
         <Route path="/main-kyungwon" element={<MainKyungwonlee />} />

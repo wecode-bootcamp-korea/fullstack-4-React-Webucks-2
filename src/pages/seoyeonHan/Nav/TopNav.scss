@@ -1,4 +1,4 @@
-header{
+.topNavHeader{
     width: 100%; height: 60px;
     padding: 10px 20px;
     background-color: #F6F5EF;
@@ -9,27 +9,13 @@ header{
         font-size: 35px;
         color: black;
     }
-    nav{
+    .webucksNav{
         float: right;
         margin-top: 8px;
         color: gray;
 
-        span{
+        .webuckSpan{
             padding: 0px 10px;
         }
-    }
-}
-
-#topMain{
-    width: 100%; height: 60px;
-
-    h1{
-        padding: 5px 0px 0px 5px;
-        font-size: 25px;
-    }
-    span{
-        float: right;
-        color: gray;
-        font-size: 13px;
     }
 }
