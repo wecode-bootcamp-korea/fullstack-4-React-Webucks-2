@@ -41,6 +41,7 @@
       "last 1 safari version"
     ]
   },
+  "proxy":"http://52.79.143.176:8000",
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
