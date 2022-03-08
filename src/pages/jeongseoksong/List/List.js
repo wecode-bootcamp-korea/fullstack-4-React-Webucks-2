@@ -1,6 +1,6 @@
 import React from 'react'
 import "./List.scss"
-import TopNav from '../../components/TopNav/TopNav.js'
+import TopNav from '../components/TopNav/TopNav.js'
 
 
 

@@ -1,13 +1,13 @@
 [
     {"id":"BIceCoffee",
         "name":"아이스 커피",
-        "imgUrl":"../images/b-01.jpg",
+        "imgUrl":"../images/seulaLee/b-01.jpg",
         "imgAlt":"b-01.jpg",
         "isIce": true,
         "isLike":false
      },{"id":"BTodayCoffee",
         "name":"오늘의 커피",
-        "imgUrl":"../images/b-02.jpg",
+        "imgUrl":"../images/seulaLee/b-02.jpg",
         "imgAlt":"b-02.jpg",
         "isIce": false,
         "isLike":false

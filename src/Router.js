@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 // 송정석's 컴포넌트
-// import LoginJeongseok from "./pages/jeongseoksong/Login/Login";
-// import MainJeongseok from "./pages/jeongseoksong/Main/Main";
-// import DetailJeongseok from "./pages/jeongseoksong/Detail/Detail";
+import LoginJeongseok from "./pages/jeongseoksong/Login/Login";
+//import MainJeongseok from "./pages/jeongseoksong/Main/Main";
+import DetailJeongseok from "./pages/jeongseoksong/Detail/Detail";
+
 
 
 // 이경원's 컴포넌트
@@ -41,9 +42,10 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/login-jeongseok" element={<LoginJeongseok />} />
-        <Route path="/main-jeongseok" element={<MainJeongseok />} />
-        <Route path="/detail-jeongseok" element={<DetailJeongseok />} /> */}
+        <Route path="/login-jeongseok" element={<LoginJeongseok />} />
+        
+        <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
+
 
         <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
         <Route path="/main-kyungwon" element={<MainKyungwonlee />} />
