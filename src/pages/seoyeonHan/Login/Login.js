@@ -1,7 +1,7 @@
 import "./Login.scss";
 import "../List/List"
 import React, { useState } from "react";
-import {Link} from 'react-router-dom'
+import { navigate, useNavigate } from 'react-router-dom';
 
 function Login() {
   const [inputId, setInputId] = useState("");
@@ -15,8 +15,11 @@ function Login() {
     setInputPw(e.target.value);
   };
 
+  const navigate = useNavigate();
   const goToList = () => {
-    <Link to ='http://localhost:3000/List-seoyeon'></Link>
+    navigate(
+      '/List-seoyeon',{inputId, inputPw}
+    )
   };
 
   return (
