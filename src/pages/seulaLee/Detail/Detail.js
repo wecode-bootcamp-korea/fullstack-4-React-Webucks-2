@@ -67,6 +67,7 @@ const Detail = () => {
         fetch(`/data/${params.id}.json`,{method:'GET'})
         .then(res => res.json())
             .then(data => {
+                console.log(data);
                 setCoffeeDetail(data)      
             });
     },[]);
@@ -109,7 +110,7 @@ function CoffeeInfo({ data }) {
                 <div className="coffee-info-nutri">
                     <div className="coffee-nutri-head">
                         <p>제품 영양 정보</p>
-                        <span>{data.size}/ {data.volume[0]}ml ({data.review["user_name"]}fl oz)</span>
+                        <span>{data.size}/ ml (fl oz)</span>
                     </div>
                     <div className="coffee-nutri-cnt">
                         <div className="nutri1">
