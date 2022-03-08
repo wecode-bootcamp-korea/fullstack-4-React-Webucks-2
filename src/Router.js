@@ -40,9 +40,9 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/login-jeongseok" element={<LoginJeongseok />} />
-        {/*<Route path="/main-jeongseok" element={<MainJeongseok />}*/}
+        <Route path="/main-jeongseok" element={<MainJeongseok />} />
         <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
-        
+
         <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
         <Route path="/main-kyungwon" element={<MainKyungwonlee />} />
         <Route path="/detail-kyungwon" element={<DetailKyungwonlee />} />
@@ -62,9 +62,11 @@ function Router() {
         <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
         <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>
         <Route path='/Detail-seoyeon' element={<DetailSeoyeon/>}/>
-    </Routes>
-  </BrowserRouter>
-);
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default Router
+export default Router;
+
+
