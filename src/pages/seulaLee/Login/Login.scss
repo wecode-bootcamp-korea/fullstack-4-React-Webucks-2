@@ -52,7 +52,7 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.3s;
-  .btn:disabled {
+  &:disabled {
     opacity: 0.5;
   }
 }
