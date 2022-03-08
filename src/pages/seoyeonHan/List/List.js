@@ -7,7 +7,7 @@ function List() {
   const [coffeeList, setCoffeeList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/data/CoffeeData.json", {
+    fetch("/data/CoffeeList.json", {
       method: "GET",
     })
       .then(res => res.json())
