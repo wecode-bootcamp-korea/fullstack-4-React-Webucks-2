@@ -1,7 +1,8 @@
 import React from "react";
 import "./Detail.scss";
+// import { faHeartFull } from "@fortawesome/free-solid-svg-icons"
+import { faHeart } from "@fortawesome/free-regular-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons"
 import TopNav from '../Nav/TopNav';
 
 function Detail() {
@@ -21,19 +22,24 @@ function Detail() {
         <img className="mainImg" src="/images/coldbrew/coldbrew3.jpg" alt="콜드브루3" />
         
         <div className="mainContentBox">
+
           <div className="dolceColdBrew">
-            <h2 className="coffeeTitleSecond">돌체 콜드 브루</h2>
-            <span>Dolce Cold Brew</span>
+            <h2 className="dolceTitle">돌체 콜드 브루</h2>
+            <span className="dolceSpan">Dolce Cold Brew</span>
             <FontAwesomeIcon icon={faHeart} className="heart" />
+            {/* <FontAwesomeIcon icon={faHeartFull} /> */}
           </div>
+
           <p className="coffeeExplain">
             무더운 여름철, 동남아 휴가지에서 즐기는 커피를 떠오르게 하는
             스타벅스 음료의 베스트 x 베스트 조합인 돌체 콜드 브루를 만나보세요!
           </p>
-          <div className="dolceHeader">
+
+          <div className="dolceInfo">
             <span className="nutrient">제품 영양 정보</span>
             <span className="size">Tall(톨) / 355ml (12 fl oz)</span>
           </div>
+
           <div className="dolceContent">
             <ul className="firstContentBox">
               <li>
@@ -64,19 +70,21 @@ function Detail() {
               </li>
             </ul>
           </div>
+          
           <div className="dolceFooter">
             <span>알레르기 유발요인 : 우유</span>
           </div>
-          <div className="dolceColdBrewReview">
-            <h3>리뷰</h3>
-            <ul>
-              <li>
+
+          <div className="dolceReview">
+            <h3 className="reviewTitle">리뷰</h3>
+            <ul className="reviewUl">
+              <li className="reviewLi">
                 <b>LOVESTAR</b>돌체 콜드 브루는 사랑입니다!
               </li>
-              <li>
+              <li className="reviewLi">
                 <b>coffee_lover</b>오늘도 마시러 왔어요. 맛있어요ㅎㅎ
               </li>
-              <li>
+              <li className="reviewLi">
                 <b>legend_dev</b>돌체 콜드 브루는 전설이다.
               </li>
             </ul>
