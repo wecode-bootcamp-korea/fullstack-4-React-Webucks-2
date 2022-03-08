@@ -2,13 +2,12 @@ import TopNav from '../components/TopNav';
 import Footer from '../components/Footer';
 import './Detail.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart} from "@fortawesome/free-regular-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons/faHeart";
+import { faHeart as anotherFaHeart } from "@fortawesome/free-solid-svg-icons/faHeart";
 import {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 
-export function IconHeart() {
-    return <FontAwesomeIcon icon = {faHeart}/>;
-}
+
 const Detail = () => {
     //초기값으로 가져오는 object값들은 값이 빈 값이나 undefined 처리가 된다.(배열이나 오브젝트가 값일 경우 읽지 못함)
     const params = useParams();
@@ -45,7 +44,9 @@ const Detail = () => {
                 //console.log(data);
                 setCoffeeDetail(data)      
             });
-    },[]);
+    }, []);
+    
+  
     return(
     <div className="wrap-seula">
         <div className="container-seula">
@@ -55,15 +56,26 @@ const Detail = () => {
         <h3 className="coffee-section-default">콜드 브루</h3>
         <span className="page-route">홈 &gt; MENU &gt; 음료 &gt; 에스프레소 &gt; 나이트로 바닐라 크림</span>
                 <CoffeeInfo data={coffeeDetail}/>
-    </article>
-               
+    </article>      
         </div>
         <Footer/>
     </div>
     );
 }
+
+
 function CoffeeInfo({ data }) {
-   
+    let [like, setLike] = useState(data.isLike)
+    const handleIcon = (e) => {
+        data.isLike === true ? data.isLike = false : data.isLike = true;
+        setLike(data.isLike)
+       // console.log(like,data.isLike);
+    }
+    function IconHeart() {
+        return <FontAwesomeIcon icon={(like=== true? anotherFaHeart : faHeart)} />;
+        //regular 아이콘을 solid 아이콘으로 변경하는 법 필요.
+    }
+    
     return (
         <section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
@@ -78,7 +90,7 @@ function CoffeeInfo({ data }) {
                         </li>
                         <li> <small>{data["eng_name"] }</small></li>
                     </ul>
-                    <span className="coffee-info-like"><IconHeart/></span>
+                    <span className={`coffee-info-like ${like === true? 'like' :''}`} onClick={handleIcon}><IconHeart/></span>
                 </h3>
                 <div className="coffee-info-desc">{data.description }</div>
                 
