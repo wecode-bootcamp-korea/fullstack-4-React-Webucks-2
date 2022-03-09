@@ -39,8 +39,9 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/login-jeongseok" element={<LoginJeongseok />} />
-        <Route path="/main-jeongseok" element={<MainJeongseok />} />
+
         <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
+
 
         <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
         <Route path="/main-kyungwon" element={<MainKyungwonlee />} />
@@ -54,6 +55,7 @@ function Router() {
         <Route path="/list-haeyun" element={<ListHaeyun />} />
         <Route path="/detail-haeyun" element={<DetailHaeyun />} />
 
+<<<<<<< HEAD
         <Route path="/login-junghwan" element={<LoginJunghwan />} />
         <Route path="/main-junghwan" element={<MainJunghwan />} />
         <Route path="/detail-junghwan" element={<DetailJunghwan />} />
@@ -61,9 +63,20 @@ function Router() {
         <Route path="/login-seoyeon" element={<LoginSeoyeon />} />
         <Route path="/List-seoyeon" element={<ListSeoyeon />} />
         <Route path="/Detail-seoyeon" element={<DetailSeoyeon />} />
+=======
+        <Route path='/login-junghwan' element={<LoginJunghwan/>}/>
+        <Route path='/main-junghwan' element={<MainJunghwan/>}/>
+        <Route path='/detail-junghwan' element={<DetailJunghwan/>}/>
+
+        <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
+        <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>
+        <Route path='/Detail-seoyeon' element={<DetailSeoyeon/>}/>
+>>>>>>> master
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default Router;
+
+

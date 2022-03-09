@@ -1,0 +1,23 @@
+{
+  "id": 4,
+  "name": "바닐라 크림 콜드 브루",
+  "EnglishName": "Vanilla Cream Cold Brew",
+  "desc": "콜드 브루에 더해진 바닐라 크림으로 깔끔하면서 달콤한 콜드 브루를 새롭게 즐길 수 있는 음료입니다.",
+  "size": "Tall (톨)",
+  "volume": "355 (12fl oz)",
+  "nutrition": [
+    { "id": 1, "name": "1회 제공량 (kcal)", "amount": 125 },
+    { "id": 2, "name": "포화지방 (g)", "amount": 6 },
+    { "id": 3, "name": "단백질 (g)", "amount": 3 },
+    { "id": 4, "name": "나트륨 (mg)", "amount": 58 },
+    { "id": 5, "name": "당류 (g)", "amount": 11 },
+    { "id": 6, "name": "카페인 (mg)", "amount": 150 }
+  ],
+  "allergie": "milk",
+  "comments": [
+    { "id": 1, "writer": "subin", "comment": "짱이에요!" },
+    { "id": 2, "writer": "haeun", "comment": "맛있어요!" },
+    { "id": 3, "writer": "dami", "comment": "좋아요!" }
+  ],
+  "imgURL": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000487]_20210430112319174.jpg"
+}
