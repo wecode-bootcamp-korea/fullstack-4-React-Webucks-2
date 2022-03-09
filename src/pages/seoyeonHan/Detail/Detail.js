@@ -6,12 +6,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TopNav from '../Nav/TopNav';
 
 function Detail() {
-
   const [heart, setHeart] = useState("black");
+  // const [reviewValue, setReviewValue] = useState("");
+  const [username, setUserName] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleLike =()=>{
-    heart=="black" ? setHeart("red") : setHeart("black")
+    heart ==="black" ? setHeart("red") : setHeart("black")
+  };
+
+  const onChangeUserName =(e)=>{
+    setUserName(e.target.value);
+  };
+
+  const onChangeMessage =(e)=>{
+    setMessage(e.target.value);
+  };
+
+  const onKeyPress = (e)=>{
+    if(e.key === 'Enter'){
+      onClick();
+    }
   }
+
+  const onClick =()=>{
+    alert(username + ': ' + message);
+    setUserName('');
+    setMessage('');
+  };
+
 
   return (
     <div className="detailContent">
@@ -92,17 +115,32 @@ function Detail() {
             <h3 className="reviewTitle">리뷰</h3>
             <ul className="reviewUl">
               <li className="reviewLi">
-                <b>LOVESTAR</b>돌체 콜드 브루는 사랑입니다!
+                <b>LOVESTAR :</b>돌체 콜드 브루는 사랑입니다!
               </li>
               <li className="reviewLi">
-                <b>coffee_lover</b>오늘도 마시러 왔어요. 맛있어요ㅎㅎ
+                <b>coffee_lover :</b>오늘도 마시러 왔어요. 맛있어요ㅎㅎ
               </li>
               <li className="reviewLi">
-                <b>legend_dev</b>돌체 콜드 브루는 전설이다.
+                <b>legend_dev :</b>돌체 콜드 브루는 전설이다.
               </li>
             </ul>
-            <div className="reviewInput">
-              <span>리뷰를 입력해주세요.</span>
+            <div className="reviewBox">
+              <input className="reviewId" 
+              placeholder="닉네임을 입력해주세요"
+              type="text"
+              name="username"
+              value={username}
+              onChange={onChangeUserName}
+               />
+              <input className="review" 
+              placeholder="리뷰를 입력해주세요"
+              type="text"
+              name="message"
+              value={message}
+              onChange={onChangeMessage}
+              onKeyPress={onKeyPress}
+               />
+               <button onClick={onClick}>등록하기</button>
             </div>
           </div>
         </div>
