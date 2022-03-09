@@ -146,6 +146,10 @@ function Detail() {
           </div>
         </div>
       </main>
+
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }
