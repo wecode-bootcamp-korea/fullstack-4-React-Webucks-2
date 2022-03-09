@@ -1,13 +1,22 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.scss";
 
 function LoginComponent() {
-  const [user, setUser] = useState();
+  const [idInput, setIdInput] = useState("");
+  const [pwInput, setPwInput] = useState("");
+  const navigate = useNavigate();
+
+  const goToMain = () => {
+    navigate("/main-kyungwon");
+  };
+  const isValid = idInput.includes("@") && pwInput.length > 8;
+
   const handleIdInput = (event) => {
-    setUser(event.target.value);
+    setIdInput(event.target.value);
   };
   const handlePwInput = (event) => {
-    setUser(event.target.value);
+    setPwInput(event.target.value);
   };
   return (
     <div>
@@ -28,7 +37,7 @@ function LoginComponent() {
             required
             onChange={handlePwInput}
           />
-          <button className="button" onClick={() => {}} disabled>
+          <button className="button" onClick={goToMain} disabled={!isValid}>
             로그인
           </button>
           <div className="find-pw">비밀번호를 잊으셨나요?</div>
