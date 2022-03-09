@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Detail.scss";
-// import { faHeartFull } from "@fortawesome/free-solid-svg-icons"
-import { faHeart } from "@fortawesome/free-regular-svg-icons"
+// import { faHeart as regularHeart} from "@fortawesome/free-regular-svg-icons"
+import { faHeart as solidHeart} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TopNav from '../Nav/TopNav';
 
 function Detail() {
-  const fullHeart =()=>{
-    
+
+  const [heart, setHeart] = useState("black");
+
+  const handleLike =()=>{
+    heart=="black" ? setHeart("red") : setHeart("black")
   }
 
   return (
     <div className="detailContent">
-
       <div>
         <TopNav/>
       </div>
@@ -30,12 +32,15 @@ function Detail() {
           <div className="dolceColdBrew">
             <h2 className="dolceTitle">돌체 콜드 브루</h2>
             <span className="dolceSpan">Dolce Cold Brew</span>
+            <div className="heart">
+                                <i className="fa-regular fa-heart heartIcon"></i>
+                            </div>
             <FontAwesomeIcon 
             className="heart" 
-            icon={faHeart} 
-            onClick={fullHeart}
+            icon={solidHeart} 
+            onClick={handleLike}
+            style={{color:heart}}
             />
-            {/* <FontAwesomeIcon icon={faHeartFull} /> */}
           </div>
 
           <p className="coffeeExplain">
