@@ -1,0 +1,113 @@
+[
+    {   
+        "id":1,
+        "name": "나이트로 바닐라 크림",
+        "imgUrl":"/images/haeyunjun/coffee1.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":2,
+        "name": "아이리시 크림 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee2.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":3,
+        "name": "솔티드 카라멜 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee3.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":4,
+        "name": "리저브 크림 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee4.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":5,
+        "name": "나이트로 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee5.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":6,
+        "name": "바닐라 스위트 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee6.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   "id":7,
+        "name": "헤이즐넛 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee7.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":8,
+        "name": "바닐라 스위트 나이트로 브루",
+        "imgUrl":"/images/haeyunjun/coffee8.jpeg",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":9,
+        "name": "모카 스위트 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee9.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":10,
+        "name": "모카 바닐라 콜드 브루",
+        "imgUrl":"/images/haeyunjun/coffee10.webp",
+        "type": "coldBrew",
+        "isCold" :true,
+        "isLiked":false
+    },
+    {   
+        "id":11,
+        "name": "아이스 커피",
+        "imgUrl":"/images/haeyunjun/coffee11.webp",
+        "type": "brewed",
+        "isCold" :false,
+        "isLiked":false
+    },
+    {   
+        "id":12,
+        "name": "오늘의 커피",
+        "imgUrl":"/images/haeyunjun/coffee12.jpeg",
+        "type": "brewed",
+        "isCold" :false,
+        "isLiked":false
+    },
+    {   
+        "id":0,
+        "name": "",
+        "imgUrl":"",
+        "type": "brewed",
+        "isCold" :false,
+        "isLiked":false
+    },
+    {   
+        "id":0,
+        "name": "",
+        "imgUrl":"",
+        "type": "brewed",
+        "isCold" :false,
+        "isLiked":false
+    }
+]

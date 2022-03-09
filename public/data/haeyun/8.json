@@ -1,0 +1,23 @@
+{
+  "id": 8,
+  "name": "콜드 브루",
+  "EnglishName": "Cold Brew",
+  "desc": "스타벅스 바리스타의 정성으로 탄생한 콜드 브루! 콜드 브루 전용 원두를 차가운 물로 14시간 동안 추출하여 한정된 양만 제공됩니다. 깊은 풍미의 새로운 커피 경험을 즐겨보세요.",
+  "size": "Tall (톨)",
+  "volume": "355 (12fl oz)",
+  "nutrition": [
+    { "id": 1, "name": "1회 제공량 (kcal)", "amount": 5 },
+    { "id": 2, "name": "포화지방 (g)", "amount": 0 },
+    { "id": 3, "name": "단백질 (g)", "amount": 0 },
+    { "id": 4, "name": "나트륨 (mg)", "amount": 11 },
+    { "id": 5, "name": "당류 (g)", "amount": 0 },
+    { "id": 6, "name": "카페인 (mg)", "amount": 150 }
+  ],
+  "allergie": null,
+  "comments": [
+    { "id": 1, "writer": "subin", "comment": "짱이에요!" },
+    { "id": 2, "writer": "haeun", "comment": "맛있어요!" },
+    { "id": 3, "writer": "dami", "comment": "좋아요!" }
+  ],
+  "imgURL": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000038]_20210430113202458.jpg"
+}

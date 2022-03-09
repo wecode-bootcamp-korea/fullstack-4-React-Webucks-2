@@ -10,6 +10,7 @@ function Detail() {
       <div className="Topnav">
         <TopNav/>
       </div>
+      
       <div id="topMain">
         <h1>콜드 브루</h1>
         <span>홈 - MENU - 음료 - 콜드 브루 - 돌체 콜드 브루</span>
