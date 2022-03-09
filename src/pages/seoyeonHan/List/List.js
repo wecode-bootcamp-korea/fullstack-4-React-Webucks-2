@@ -9,6 +9,7 @@ function List() {
 
   //coffeeList
   useEffect(() => {
+
     fetch("/data/seoyeonData/CoffeeList.json")
       .then((res) => res.json())
       .then((data) => {

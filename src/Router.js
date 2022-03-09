@@ -5,8 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // 송정석's 컴포넌트
 import LoginJeongseok from "./pages/jeongseoksong/Login/Login";
-
-//import MainJeongseok from "./pages/jeongseoksong/Main/Main";
+import ListJeongseok from "./pages/jeongseoksong/List/List";
 import DetailJeongseok from "./pages/jeongseoksong/Detail/Detail";
 
 
@@ -44,7 +43,8 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/login-jeongseok" element={<LoginJeongseok />} />
-        
+
+        <Route path="/list-jeongseok" element={<ListJeongseok />} />
         <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
 
 
