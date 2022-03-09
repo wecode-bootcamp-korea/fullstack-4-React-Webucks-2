@@ -110,8 +110,9 @@
 .coffee-review {
   .review-title {
     padding-bottom: 15px;
-    font-size: 1.2rem;
     border-bottom: 2px solid $color-border;
+    font-size: 1.2rem;
+    text-align: left;
   }
   .review-cnt {
     margin: 1rem 0 2rem;
@@ -127,13 +128,34 @@
 }
 
 .input-review {
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
   width: 100%;
   background: $color-nav;
   border: none;
-  font-size: 1rem;
-  &:placeholder {
-    color: $color-777;
-    font-weight: $font-bold;
+  font-size: 1.5rem;
+  input[type="text"] {
+    width: 95%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.125rem;
+    &:placeholder {
+      color: $color-777;
+    }
+  }
+
+  svg {
+    color: $color-border;
+    cursor: pointer;
+    pointer-events: none;
+    @include transition;
+  }
+  &.is-typing {
+    svg {
+      color: #4d3d2b;
+      pointer-events: visible;
+    }
   }
 }
