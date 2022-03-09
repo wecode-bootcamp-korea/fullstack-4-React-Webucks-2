@@ -2,30 +2,21 @@ import React, {useState} from 'react'
 // import LoginComponent from './LoginComponent';
 import './Login.scss'
 
-
-const inputId = document.getElementsByClassName('id')[0];
-const inputPw = document.getElementsByClassName('password')[0];
-const loginButton = document.getElementsByClassName('loginButton')[0];
-
 function Login() {
     const [id, setId] = useState('')
+    const [password, setPassword] = useState('')
 
-    const handleIdInput = event => {
-        setId(event.target.value);
+    //id 입력시 값 저장
+    const handleIdInput = e => {
+        setId(e.target.value);
+        console.log(id);
+    }
+    //pw 입력시 값 저장
+    const handlePwInput = e => {
+        setPassword(e.target.value);
+        console.log(password);
     }
 
-    // function activateButton() {
-    //     if (inputId.value.includes('@') && inputPw.value.length > 7) {
-    //         loginButton.style.backgroundColor = '#61aded';
-            
-    //     } else {
-    //         console.log('로그인버튼 비활성화');
-    //         loginButton.style.backgroundColor = '#add3ea';
-            
-    //     };
-    // }
-
-    
     return (
         <div>
             <section className='loginPage'>
@@ -34,13 +25,13 @@ function Login() {
                     <input 
                         className = 'id' 
                         type='text' 
-                        onChange = '' 
+                        onChange = {handleIdInput} 
                         placeholder = "전화번호, 사용자 이름 또는 이메일"
                     />
                     <input 
                         className = 'password' 
                         type='password' 
-                        onChange = {handleIdInput} 
+                        onChange = {handlePwInput} 
                         placeholder = "비밀번호" 
                     />
                     <button 
@@ -57,3 +48,17 @@ function Login() {
 }
 
 export default Login
+
+// const inputId = document.getElementsByClassName('id')[0];
+// const inputPw = document.getElementsByClassName('password')[0];
+// const loginButton = document.getElementsByClassName('loginButton')[0];
+// function activateButton() {
+//     if (inputId.value.includes('@') && inputPw.value.length > 7) {
+//         loginButton.style.backgroundColor = '#61aded';
+        
+//     } else {
+//         console.log('로그인버튼 비활성화');
+//         loginButton.style.backgroundColor = '#add3ea';
+        
+//     };
+// }
