@@ -4,6 +4,7 @@ import "./Detail.scss";
 import { faHeart as solidHeart} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TopNav from '../Nav/TopNav';
+import Footer from './Footer';
 
 function Detail() {
   const [heart, setHeart] = useState("black");
@@ -56,8 +57,8 @@ function Detail() {
             <h2 className="dolceTitle">돌체 콜드 브루</h2>
             <span className="dolceSpan">Dolce Cold Brew</span>
             <div className="heart">
-                                <i className="fa-regular fa-heart heartIcon"></i>
-                            </div>
+              <i className="fa-regular fa-heart heartIcon"></i>
+            </div>
             <FontAwesomeIcon 
             className="heart" 
             icon={solidHeart} 
