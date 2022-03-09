@@ -6,6 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TopNav from '../Nav/TopNav';
 
 function Detail() {
+  const fullHeart =()=>{
+    
+  }
+
   return (
     <div className="detailContent">
 
@@ -26,7 +30,11 @@ function Detail() {
           <div className="dolceColdBrew">
             <h2 className="dolceTitle">돌체 콜드 브루</h2>
             <span className="dolceSpan">Dolce Cold Brew</span>
-            <FontAwesomeIcon icon={faHeart} className="heart" />
+            <FontAwesomeIcon 
+            className="heart" 
+            icon={faHeart} 
+            onClick={fullHeart}
+            />
             {/* <FontAwesomeIcon icon={faHeartFull} /> */}
           </div>
 
