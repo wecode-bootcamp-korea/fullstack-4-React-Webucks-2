@@ -11,7 +11,7 @@
     margin-top: 50px;
     border: 1px solid #cdcdcd;
     border-radius: 5px;
-  }
+  
   
   .loginLogo {
     font-family: "Dancing Script", cursive;
@@ -47,8 +47,8 @@
     outline: none;
   }
   
-  .loginButton {
-    margin: 10px 10px 10px 10px;
+  button {
+    margin: 10px;
     height: 35px;
     width: 280px;
     background-color: #5eafe9;
@@ -56,9 +56,21 @@
     border-radius: 5px;
     color: white;
     outline: none;
-    opacity: 0.5;
   }
   
+  .buttonAble{
+    color: white;
+    background-color: #5eafe9;
+    cursor: pointer;
+  }
+  .buttonDisable{
+    color: white;
+    background-color: #5eafe9;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+
   .lostPasswd {
     margin-top: 150px;
     margin-bottom: 50px;
@@ -66,4 +78,4 @@
     font-size: 12px;
     font-weight: bold;
   }
-  
+}

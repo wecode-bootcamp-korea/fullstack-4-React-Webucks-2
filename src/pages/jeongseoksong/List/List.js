@@ -9,12 +9,21 @@ import CoffeeCard from '../components/CoffeCard/CoffeeCard';
 function List() {
 
     const [coldBrewCoffeeList, setcoldBrewCoffeeList] = useState([]);
+    const [brewCoffeeList, setbrewCoffeeList] = useState([]);
 
     useEffect(()=>{
-        fetch('data/coldBrewcoffeeList.json',{method:'GET'})
+        fetch('/data/coldBrewcoffeeList.json')
             .then(res => res.json())
             .then(data => { 
                 setcoldBrewCoffeeList(data);
+            });
+    }, []);
+
+    useEffect(()=>{
+        fetch('/data/brewCoffeeList.json')
+            .then(res => res.json())
+            .then(data => { 
+                setbrewCoffeeList(data);
             });
     }, []);
 
@@ -40,6 +49,11 @@ function List() {
                     <ol className="bigText">브루드 커피</ol>
                     <ol className="smallText">디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)</ol>
                 </ul>
+                <div className='brew-section'>
+                    {brewCoffeeList.map((list)=>{
+                        <CoffeeCard key={list.id} list={list}/>
+                    })}
+                </div>
             </div>
         </section>
 
