@@ -20,7 +20,19 @@ function Login() {
   const navigate = useNavigate();
 
   const goToList = () => {
-    navigate('/List-seoyeon');
+    // navigate('/List-seoyeon');
+    fetch("/users/login",{
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: inputId,
+        password: inputPw,
+      }),
+    })
+    .then((response) => response.json())
+    .then((result) => console.log(result))
   };
 
   return (
