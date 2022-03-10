@@ -79,7 +79,7 @@ function Detail() {
             </div>
         </section>
         <footer>
-            <ol>
+            <ol className='footerMenu'>
                 <ii>COMPANY
                     <li>한눈에 보기</li>
                     <li>스타벅스 사명</li>

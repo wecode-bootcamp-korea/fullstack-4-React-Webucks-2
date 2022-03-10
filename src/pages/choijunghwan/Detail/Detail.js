@@ -25,6 +25,12 @@ export default function Detail() {
   const createComment = (e) => {
     e.preventDefault();
 
+      
+    input == "" ? alert("입력칸이 빈칸입니다") : setCommentArr(prev=>[...prev, comment])
+    setInput("");
+  }
+
+
     input == ""
       ? alert("입력값이 빈칸입니다")
       : setCommentArr((prev) => [...prev, comment]);
@@ -45,11 +51,9 @@ export default function Detail() {
             <li>화이트 초콜릿 모카</li>
           </ol>
         </nav>
-        <div className="container">
-          <img
-            alt="coffee"
-            src="https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW1lcmljYW5vfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          />
+
+        <div className="container1">
+          <img alt="coffee" src="https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW1lcmljYW5vfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
           <div className="productDetail">
             <div className="productName">
               <span id="koName">화이트 초콜릿 모카</span>
@@ -147,7 +151,7 @@ export default function Detail() {
           </div>
         </div>
       </div>
-      <footer>
+      <footer >
         <ol>
           COMPANY
           <li>한눈에 보기</li>
