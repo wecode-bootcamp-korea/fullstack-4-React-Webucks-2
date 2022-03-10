@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import "./List.scss";
 import TopNav from '../components/TopNav/TopNav.js';
@@ -50,5 +51,6 @@ function List() {
 
 
 export default List
+
 
 

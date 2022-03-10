@@ -1,10 +1,9 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import "./Login.scss"
-
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Login.scss";
 
 function Login() {
+
     const navigate = useNavigate();
 
     function goTosignup() {
@@ -22,10 +21,17 @@ function Login() {
                             <button type="button" className="loginButton" disabled="disabled">로그인</button>
                             <div onClick= { () => goTosignup() } className="lostPasswd">비밀번호를 잊으셧나요?</div>
             </section>
+
         </div>
-        )
+        <button type="button" className="loginButton" disabled="disabled">
+          로그인
+        </button>
+        <div onClick={() => goTosignup()} className="lostPasswd">
+          비밀번호를 잊으셧나요?
+        </div>
+      </section>
+    </div>
+  );
 }
-
-
 
 export default Login;
