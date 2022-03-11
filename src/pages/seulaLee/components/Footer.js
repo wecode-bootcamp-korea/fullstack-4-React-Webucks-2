@@ -2,7 +2,7 @@ import './Footer.scss';
 
 function Footer(){
     return (
-        <footer>
+        <footer className="footer-seula">
             <h2 className="hidden">푸터</h2>
             <div className="footer-wrap">
                 <ul className="footer-menu">
