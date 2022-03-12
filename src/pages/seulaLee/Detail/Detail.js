@@ -1,11 +1,13 @@
-import TopNav from '../components/TopNav';
-import Footer from '../components/Footer';
-import './Detail.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons/faHeart";
 import { faHeart as anotherFaHeart } from "@fortawesome/free-solid-svg-icons/faHeart";
 import {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom';
+
+import TopNav from '../components/TopNav';
+import Footer from '../components/Footer';
+import './Detail.scss';
+import Review from './Review';
 
 
 const Detail = () => {
@@ -30,10 +32,10 @@ const Detail = () => {
             protain:1,
             caffeine:232,
             alergy: [],
-            review: {
+            review: [{
                 user_name: 'userName',
                 user_comment:'userComment' 
-            } 
+            }] 
         }
     }
 ); 
@@ -63,19 +65,14 @@ const Detail = () => {
     );
 }
 
-
 function CoffeeInfo({ data }) {
-    let [like, setLike] = useState(data.isLike)
+    let [like, setLike] = useState(data.isLike);
+    
     const handleIcon = (e) => {
         data.isLike === true ? data.isLike = false : data.isLike = true;
         setLike(data.isLike)
        // console.log(like,data.isLike);
     }
-    function IconHeart() {
-        return <FontAwesomeIcon icon={(like=== true? anotherFaHeart : faHeart)} />;
-        //regular 아이콘을 solid 아이콘으로 변경하는 법 필요.
-    }
-    
     return (
         <section className="coffee-info-container">
             <h2 className="hidden">커피 이미지 및 정보</h2>
@@ -90,7 +87,9 @@ function CoffeeInfo({ data }) {
                         </li>
                         <li> <small>{data["eng_name"] }</small></li>
                     </ul>
-                    <span className={`coffee-info-like ${like === true? 'like' :''}`} onClick={handleIcon}><IconHeart/></span>
+                    <span className={`coffee-info-like ${like === true ? 'like' : ''}`} onClick={handleIcon}>
+                        <FontAwesomeIcon icon={(like === true ? anotherFaHeart : faHeart)} />
+                    </span>
                 </h3>
                 <div className="coffee-info-desc">{data.description }</div>
                 
@@ -133,29 +132,13 @@ function CoffeeInfo({ data }) {
                     {data.alergy}
                     </div>
                 </div>
-                <div className="coffee-review">
-                    <h3 className="review-title">리뷰</h3>
-                    <div className="review-cnt">
-                        <dl className="review-user">
-                            <dt>{(data.review === undefined ? '멋진리뷰어' : data.review['user_name'])}</dt>
-                            <dd>{(data.review === undefined ? '정성담은 리뷰' : data.review['user_comment'])}</dd>
-                        </dl>
-                        <dl className="review-user">
-                            <dt>북방의핑크팬더</dt>
-                            <dd>오늘도 나이트로 뭐시기를 마시러 갑니다.</dd>
-                        </dl>
-                        <dl className="review-user">
-                            <dt>딸기자일리톨</dt>
-                            <dd>진짜 나이트로 바닐라 크림은 전설이다.진짜 나이트로 바닐라 크림은 전설이다.</dd>
-                        </dl>
-                    </div>
-                    <input type="text" className="input-review" placeholder="리뷰를 입력해주세요." />
-                </div>
+                <Review inputData={data}/>
                 
             </div>
         </section>);
 
 }
+
 
 export {CoffeeInfo};
 export default Detail;

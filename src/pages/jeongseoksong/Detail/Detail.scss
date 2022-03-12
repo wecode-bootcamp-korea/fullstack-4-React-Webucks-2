@@ -148,13 +148,13 @@ footer {
     color: white;
 }
 
-footer ol {
+.footerMenu {
     display: flex;
     justify-content: space-between;
     padding: 30px;
     font-size: 12px;
 }
 
-footer ol li {
+.footerMenu li {
     padding: 8px 0px;
 }

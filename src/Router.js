@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 // 송정석's 컴포넌트
 import LoginJeongseok from "./pages/jeongseoksong/Login/Login";
-import MainJeongseok from "./pages/jeongseoksong/List/List";
+import ListJeongseok from "./pages/jeongseoksong/List/List";
 import DetailJeongseok from "./pages/jeongseoksong/Detail/Detail";
 
 // 이경원's 컴포넌트
@@ -40,6 +41,7 @@ function Router() {
       <Routes>
         <Route path="/login-jeongseok" element={<LoginJeongseok />} />
 
+        <Route path="/list-jeongseok" element={<ListJeongseok />} />
         <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
 
         <Route path="/login-kyungwon" element={<LoginKyungwonlee />} />
@@ -54,16 +56,20 @@ function Router() {
         <Route path="/list-haeyun" element={<ListHaeyun />} />
         <Route path="/detail-haeyun" element={<DetailHaeyun />} />
 
-        <Route path="/login-junghwan" element={<LoginJunghwan />} />
-        <Route path="/main-junghwan" element={<MainJunghwan />} />
-        <Route path="/detail-junghwan" element={<DetailJunghwan />} />
 
-        <Route path="/login-seoyeon" element={<LoginSeoyeon />} />
-        <Route path="/List-seoyeon" element={<ListSeoyeon />} />
-        <Route path="/Detail-seoyeon" element={<DetailSeoyeon />} />
+        <Route path='/login-junghwan' element={<LoginJunghwan/>}/>
+        <Route path='/main-junghwan' element={<MainJunghwan/>}/>
+        <Route path='/detail-junghwan' element={<DetailJunghwan/>}/>
+
+
+        <Route path='/login-seoyeon' element={<LoginSeoyeon/>}/>
+        <Route path='/List-seoyeon' element={<ListSeoyeon/>}/>
+        <Route path='/Detail-seoyeon' element={<DetailSeoyeon/>}/>
       </Routes>
     </BrowserRouter>
-  );
+    );
+
 }
+
 
 export default Router;

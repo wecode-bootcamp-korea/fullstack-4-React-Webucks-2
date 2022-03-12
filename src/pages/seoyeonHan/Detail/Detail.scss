@@ -1,64 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*header부분*/
-header{
-    width: 100%; height: 60px;
-    padding: 10px 20px;
-    background-color: #F6F5EF;
+.detailContent{
+    width: 80%; 
+    margin-left: 150px;
 
-    .webucksLogo{ 
-        float: left;
-        font-family: 'Dancing Script', cursive;
-        font-size: 35px;
-        color: black;
-    }
-    nav{
-        float: right;
-        margin-top: 8px;
-        color: gray;
+    .topMain{
+        width: 100%; height: 60px;
 
-        span{
-            padding: 0px 10px;
+        .topMainTitle{
+            padding: 10px 0px 0px 0px;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .topMainSpan{
+            float: right;
+            color: gray;
+            font-size: 13px;
         }
     }
-}
 
-#topMain{
-    width: 100%; height: 60px;
-
-    h1{
-        padding: 5px 0px 0px 5px;
-        font-size: 25px;
-    }
-    span{
-        float: right;
-        color: gray;
-        font-size: 13px;
-    }
-}
-
-main{
-    img{
-        width: 275;
+    .mainImg{
+        width: 350px; height: 350px;
         float: left;
         padding-right: 25px;
     }
-    #mainContentBox{
+
+    .mainContentBox{
         overflow: hidden;
 
-        #dolceColdBrew{
+        .dolceColdBrew{
             height: 60px;
             position: relative;
             border-bottom: 2px solid black;
 
-            h2{
+            .dolceTitle{
                 position: absolute;
-                display: inline-block;
+                font-weight: 700;
+
             }
-            span{
+            .dolceSpan{
                 position: absolute;
                 top:30px; left:2px;
             }
@@ -68,7 +46,7 @@ main{
             }
         }
     }
-}
+
 
 .coffeeExplain{
     padding: 14px 0px;
@@ -76,29 +54,46 @@ main{
     font-size: 14px;
 }
 
-#dolceHeader{
+.dolceInfo {
     height: 45px;
     border-bottom: 1px solid #ababab;
 
-    span{
+    .nutrient, .size{
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 600;
         color: black;
     }
-    #nutrient{
+    .nutrient{
         float: left;
         padding: 13px;
     }
-    #size{
+    .size{
         float: right;
         padding: 13px;
     }
 }
 
-#dolceContent{
+.dolceContent{
     display: flex;
     width: 100%;
     height: 95px;
+
+    .firstContentBox{
+        width: 100%;
+        margin: 10px 0px;
+        padding: 0px 10px;
+        list-style: none;
+        font-size: 14px;
+        border-right: 1px dotted #ababab;
+    }
+    
+    .secondContentBox{
+        width: 100%;
+        margin: 10px 0px;
+        padding: 0px 10px;
+        list-style: none;
+        font-size: 14px;
+    }
 
     li{
         height: 25px;
@@ -113,63 +108,59 @@ main{
     }
 }
 
-#firstContentBox{
-    width: 100%;
-    margin: 10px 0px;
-    padding: 0px 10px;
-    list-style: none;
-    font-size: 14px;
-    border-right: 1px dotted #ababab;
-}
-
-#secondContentBox{
-    width: 100%;
-    margin: 10px 0px;
-    padding: 0px 10px;
-    list-style: none;
-    font-size: 14px;
-}
-
-#dolceFooter{
-    width: 100%; height: 41px;
+.dolceFooter{
+    width: 100%; height: 40px;
     background-color: #F4F4F2;
 
     span{
         float: left;
         padding: 10px;
         font-weight: 600;
+        font-size: 15px;
         color: black;
     }
 }
 
-#dolceColdBrewReview{
-    padding-top: 25px;
-
-    h3{
-        padding-bottom: 5px;
+.dolceReview{
+    .reviewTitle{
+        display: inline-block;
+        width: 100%;
+        padding: 14px;
         border-bottom: 1px solid #ababab;
         font-size: 17px;
+        font-weight: 500;
     }
-    ul{
+
+    .reviewUl{
         padding: 15px 0px;
 
-        li{
+        .reviewLi{
             padding: 1px;
             font-size: 13px;
 
             b{
+                font-weight: 500;
                 padding-right: 3px;
             }
         }
     }
 }
 
-#reviewInput{
-    width: 100%; height: 33px;
-    background-color: #F4F4F2;
-
-    span{
+.reviewBox{
+    .reviewId{
         float: left;
+        width: 100%; height: 33px;
+        background-color: #F4F4F2;
+        border: none;
         padding: 5px;
     }
+    .review{
+        float: left;
+        width: 100%; height: 33px;
+        background-color: #F4F4F2;
+        border: none;
+        padding: 5px;
+    }
+}
+
 }

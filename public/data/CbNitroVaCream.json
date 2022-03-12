@@ -16,8 +16,8 @@
     "protain":1,
     "caffeine":232,
     "alergy":["우유"],
-    "review":{
+    "review":[{
         "user_name":"물떡농담곰",
         "user_comment":"물떡드세요"
-    }
+    }]
 }
