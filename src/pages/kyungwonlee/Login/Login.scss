@@ -1,3 +1,6 @@
+.login-page {
+  width: 100%;
+}
 .login-form {
   width: 500px;
   margin: calc(var(--padding) * 2) auto;
@@ -36,18 +39,18 @@
     border: none;
     padding: var(--padding);
     box-sizing: border-box;
-    background-color: #7cbbe3;
+    background-color: #61a0c7;
     color: white;
-    opacity: 0.5;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.2;
+      cursor: inherit;
+    }
   }
 }
 .find-pw {
   display: inline-block;
   color: #7cbbe3;
   text-decoration: none;
-}
-
-.active {
-  opacity: 1;
-  cursor: pointer;
 }

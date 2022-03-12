@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--padding);
+  padding: calc(var(--padding) * 3) var(--padding);
   margin-bottom: var(--padding);
   background-color: var(--bg-color);
 
