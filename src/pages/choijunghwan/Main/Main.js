@@ -1,10 +1,11 @@
 import "./Main.scss";
 import TopNav from "../components/TopNav/TopNav";
 import Brew from "../components/CoffeCard/CoffeCard";
-import coffeeData from "../coffeelist.json";
+import coffeeData from "../coffeelist.json"
 
-export default function Main() {
-  return (
+
+export default function Main (){
+  return(
     <div className="ListJung">
       <TopNav/>
         <div className="coldbrew">
@@ -34,5 +35,5 @@ export default function Main() {
     })}
         </section>
     </div>
-  );
+  )
 }
