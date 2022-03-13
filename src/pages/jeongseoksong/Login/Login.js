@@ -44,6 +44,7 @@ function Login() {
     return (
         <div className='loginPage'>
             <section className="login">
+              <div>
                 <div className="loginLogo">WeBucks</div>
                     <div action="" className="inputForm">
                         <input value={inputId} type="text" className="loginId" 
@@ -63,15 +64,13 @@ function Login() {
                         로그인</button>
                         <div onClick= { () => goTosignup() } 
                         className="lostPasswd">비밀번호를 잊으셧나요?</div>
-            </section>
-
-        </div>
-        <button type="button" className="loginButton" disabled="disabled">
-          로그인
-        </button>
-        <div onClick={() => goTosignup()} className="lostPasswd">
-          비밀번호를 잊으셧나요?
-        </div>
+                </div>                      
+          <button type="button" className="loginButton" disabled="disabled">
+            로그인
+          </button>
+          <div onClick={() => goTosignup()} className="lostPasswd">
+            비밀번호를 잊으셧나요?
+          </div>
       </section>
     </div>
   );
