@@ -34,10 +34,14 @@
     margin:  auto;
     padding: 8px;
     font-weight: 900;
-    border:  1px solid #add3ea;
+    border:  1px solid #61aded;
     border-radius: 5px;
     color:   white;
-    background-color: #add3ea;
+    background-color: #61aded;
+
+    &:disabled {
+        opacity : 0.2;
+    }
 }
 
 .forgotPassword {
