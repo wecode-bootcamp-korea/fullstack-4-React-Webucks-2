@@ -25,7 +25,7 @@ export default function Login (){
       }).then((response)=>response.json())
       .then((result)=>console.log(result))
 
-      if(opacity===1){ navaigate("/main-junghwan");}
+      if(opacity === 1){ navaigate("/main-junghwan");}
     }
 
     const handleIdInput = (event)=>{
