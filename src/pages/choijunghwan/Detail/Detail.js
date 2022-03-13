@@ -1,46 +1,41 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import "./Detail.scss";
-import Comment from "../components/Comment/Comment";
+import Comment from '../components/Comment/Comment';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import TopNav from "../components/TopNav/TopNav";
+import {faHeart} from "@fortawesome/free-solid-svg-icons"
+import TopNav from '../components/TopNav/TopNav';
 
-export default function Detail() {
+export default function Detail () {
   const [heart, setHeart] = useState("black");
   const [input, setInput] = useState("");
-  const [comment, setComment] = useState({ id: 0, comment: "" });
-  const [commentArr, setCommentArr] = useState([]);
+  const [comment , setComment ] = useState({id:0,comment:""});
+  const [commentArr, setCommentArr] =useState([]);
 
-  const toggleHeart = () => {
-    heart == "black" ? setHeart("red") : setHeart("black");
-  };
 
-  const handleInput = (e) => {
-    const { value } = e.target;
+  const toggleHeart = ()=>{
+  heart == "black" ?  setHeart("red"):setHeart("black")
+  }
 
-    setInput(value);
-    setComment({ id: Date.now(), comment: value });
-  };
+  const handleInput = (e) =>{
+    const {value} = e.target;
 
-  const createComment = (e) => {
+    setInput(value);    
+    setComment({id:Date.now(),comment:value})  
+  
+  }
+
+  const createComment = (e) =>{
     e.preventDefault();
-
       
     input == "" ? alert("입력칸이 빈칸입니다") : setCommentArr(prev=>[...prev, comment])
     setInput("");
   }
 
 
-    input == ""
-      ? alert("입력값이 빈칸입니다")
-      : setCommentArr((prev) => [...prev, comment]);
-    setInput("");
-  };
-
   return (
-    <div className="DetailJung">
-      <div className="bigContainer">
-        <TopNav />
+    <div className='DetailJung'>
+        <div className="bigContainer">
+        <TopNav/>
         <span className="productCategory">콜드 브루</span>
         <nav className="miniNav">
           <ol>
@@ -51,29 +46,23 @@ export default function Detail() {
             <li>화이트 초콜릿 모카</li>
           </ol>
         </nav>
-
         <div className="container1">
           <img alt="coffee" src="https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW1lcmljYW5vfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
           <div className="productDetail">
             <div className="productName">
-              <span id="koName">화이트 초콜릿 모카</span>
-              <span id="enName">White Chocolate Mocha</span>
+              <span id="koName">화이트 초콜릿 모카</span
+              ><span id="enName">White Chocolate Mocha</span>
               <button className="heartIcon" onClick={toggleHeart}>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faHeart}
-                  style={{ color: heart }}
-                />
+              <FontAwesomeIcon className='icon' icon={faHeart} style={{color:heart}} />
               </button>
             </div>
             <div className="productDescription">
-              달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와
-              섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프로소가
-              부드럽게 어우러진 커피
+              달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어
+              휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프로소가 부드럽게
+              어우러진 커피
             </div>
             <div className="energyTitle">
-              <span>제품 영양 정보</span>
-              <span>Tall(톨) / 355ml (12 fl oz)</span>
+              <span>제품 영양 정보</span><span>Tall(톨) / 355ml (12 fl oz)</span>
             </div>
             <section id="energySection">
               <div id="right">
@@ -106,7 +95,8 @@ export default function Detail() {
               </div>
             </section>
             <div className="allergyBox">
-              알레르기 유발 요인 :<span id="allergy">우유</span>
+              알레르기 유발 요인 :
+              <span id="allergy">우유</span>
             </div>
             <div className="commentHead">리뷰</div>
             <section className="commentSection">
@@ -117,35 +107,21 @@ export default function Detail() {
                 </li>
                 <li>
                   <span className="nickname">CHOCO7</span>
-                  <span className="comment">
-                    오늘도 화이트 초콜릿 모카를 마시러 갑니다.
-                  </span>
+                  <span className="comment"
+                    >오늘도 화이트 초콜릿 모카를 마시러 갑니다.</span
+                  >
                 </li>
                 <li>
                   <span className="nickname">legend_dev</span>
-                  <span className="comment">
-                    진짜 화이트 초콜릿 모카는 전설이다.진짜 화이트 초콜릿 모카는
-                    전설이다.진짜 하이트 초...
-                  </span>
+                  <span className="comment"
+                    >진짜 화이트 초콜릿 모카는 전설이다.진짜 화이트 초콜릿 모카는
+                    전설이다.진짜 하이트 초...</span>
                 </li>
-                {commentArr
-                  ? commentArr.map((value) => (
-                      <Comment
-                        id={value.id}
-                        comment={value.comment}
-                        commentArr={commentArr}
-                        setCommentArr={setCommentArr}
-                      />
-                    ))
-                  : null}
+                { commentArr ? commentArr.map( (value)=> <Comment id={value.id} comment={value.comment} commentArr={commentArr} setCommentArr={setCommentArr}/> ): null
+                }
               </ol>
               <form onSubmit={createComment} id="commentForm">
-                <input
-                  value={input}
-                  placeholder="리뷰를 입력해주세요"
-                  name="comment"
-                  onChange={handleInput}
-                />
+                <input value={input} placeholder="리뷰를 입력해주세요" name="comment" onChange={handleInput}/>
               </form>
             </section>
           </div>
@@ -183,8 +159,12 @@ export default function Detail() {
           <li>채용 소개</li>
           <li>채용 지원하기</li>
         </ol>
-        <ol>WEBUCKS</ol>
+        <ol>
+          WEBUCKS
+        </ol>
       </footer>
-    </div>
-  );
+   </div>)  
 }
+ 
+
+    
