@@ -1,31 +1,27 @@
-@import 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap";
 
 /*font*/
-$font-default:'Noto Sans KR',
-Arial,
-Helvetica,
-sans-serif !default;
-$font-logo:'Dancing Script',
-Georgia,
-'Times New Roman',
-Times,
-serif !default;
+$font-default: "Noto Sans KR", Arial, Helvetica, sans-serif !default;
+$font-logo: "Dancing Script", Georgia, "Times New Roman", Times, serif !default;
 /*font-weight*/
-$font-light:300 !default;
-$font-bold:700 !default;
-$font-normal:400 !default;
+$font-light: 300 !default;
+$font-bold: 700 !default;
+$font-normal: 400 !default;
 /*color*/
-$color-default:#333 !default;
-$color-nav:#f4f4f2 !default;
-$color-gray:#eeefef !default;
-$color-777:#777 !default;
-$color-border:#ddd !default;
+$color-default: #333 !default;
+$color-nav: #f4f4f2 !default;
+$color-gray: #eeefef !default;
+$color-777: #777 !default;
+$color-border: #ddd !default;
 /*border stlye*/
-$borderSolidDDD:1px solid $color-border !default;
-$borderDottedDDD:2px dotted $color-border !default;
+$borderSolidDDD: 1px solid $color-border !default;
+$borderDottedDDD: 2px dotted $color-border !default;
 /*flex*/
 
 @mixin flexBetween {
-    display:flex;
-    justify-content: space-between;   
+  display: flex;
+  justify-content: space-between;
+}
+@mixin transition {
+  transition: all 0.3s;
 }

@@ -1,0 +1,23 @@
+{
+  "id": 2,
+  "name": "나이트로 콜드 브루",
+  "EnglishName": "Nitro Cold Brew",
+  "desc": "나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마!부드러운 목 넘김과 완벽한 밸런스에 커피 본연의 단맛을 경험할 수 있습니다.",
+  "size": "Tall (톨)",
+  "volume": "355 (12fl oz)",
+  "nutrition": [
+    { "id": 1, "name": "1회 제공량 (kcal)", "amount": 5 },
+    { "id": 2, "name": "포화지방 (g)", "amount": 0 },
+    { "id": 3, "name": "단백질 (g)", "amount": 0 },
+    { "id": 4, "name": "나트륨 (mg)", "amount": 5 },
+    { "id": 5, "name": "당류 (g)", "amount": 0 },
+    { "id": 6, "name": "카페인 (mg)", "amount": 245 }
+  ],
+  "allergie": null,
+  "comments": [
+    { "id": 1, "writer": "subin", "comment": "짱이에요!" },
+    { "id": 2, "writer": "haeun", "comment": "맛있어요!" },
+    { "id": 3, "writer": "dami", "comment": "좋아요!" }
+  ],
+  "imgURL": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000479]_20210426091843897.jpg"
+}

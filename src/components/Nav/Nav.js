@@ -4,7 +4,7 @@ import "./Nav.scss";
 function TopNav() {
   return (
     <div>
-      <header>
+      <header className="nav-kyungwon">
         <h1 className="logo">Webucks</h1>
         <nav>
           <ul className="nav-links">

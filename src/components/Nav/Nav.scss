@@ -1,2 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
+.nav-kyungwon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  margin-bottom: var(--padding);
+  background-color: var(--bg-color);
+
+  .logo {
+    display: inline-block;
+    margin-bottom: calc(var(--padding) * 2);
+    margin: 0;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+  }
+
+  .nav-links {
+    li {
+      display: inline-block;
+      padding: calc(var(--padding) / 2);
+    }
+  }
+}

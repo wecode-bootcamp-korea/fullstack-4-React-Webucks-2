@@ -1,129 +1,162 @@
-@use '../../../styles/commons.scss';
-@import '../../../styles/variables';
-
+@use "../../../styles/commons.scss";
+@import "../../../styles/variables";
 
 .coffee-section-default {
-    margin: 1rem 0;
-    font-size: 2rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: $font-bold;
 }
 .page-route {
-    display: block;
-    margin-bottom: 20px;
-    color: $color-777;
-    font-size: 0.9rem;
-    font-weight:$font-light;
-    text-align: right;
+  display: block;
+  margin-bottom: 20px;
+  color: $color-777;
+  font-size: 0.9rem;
+  font-weight: $font-light;
+  text-align: right;
 }
-
 
 .coffee-info-container {
-    @include flexBetween;
+  @include flexBetween;
+  width: 100%;
+  .coffee-img-wrap {
+    flex-basis: 40%;
 
-    .coffee-img-wrap {
-        flex-basis: 40%;
-
-        img {
-            width: 100%;
-        }
+    img {
+      width: 100%;
     }
+  }
 
-    .coffee-info {
-        flex-grow: 1;
-        display: flex;
-        flex-flow: column;
-        padding-left: 40px;
+  .coffee-info {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    padding-left: 40px;
 
-        .coffee-info-title {
-            @include flexBetween;
-            padding-bottom: 2rem;
-            border-bottom: 2px solid #000;
-
-            p {
-                font-size: 1.5rem;
-                margin: 0 0 8px 0;
-            }
-            small{font-weight: $font-light;}
-        }
-        .coffee-info-like {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50px;
-            font-size: 1.8rem;
-            color: $color-border;
-        }
+    .coffee-info-title {
+      @include flexBetween;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #000;
+      text-align: center;
+      p {
+        margin: 0 0 8px 0;
+        font-size: 1.5rem;
+        font-weight: $font-normal;
+      }
+      small {
+        font-size: 1rem;
+        font-weight: $font-light;
+      }
     }
-    .coffee-info-desc {
-        padding: 30px 0;
-        font-size: 1.12rem;
+    .coffee-info-like {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      font-size: 1.8rem;
+      color: $color-border;
+      cursor: pointer;
+      @include transition;
+      svg {
+        pointer-events: none;
+      }
+      &.like {
+        color: #ed3642;
+      }
     }
+  }
+
+  .coffee-info-desc {
+    padding: 30px 0;
+    font-size: 1.12rem;
+  }
 }
 
-.coffee-info-nutri{
-    .coffee-nutri-head {
-        padding: 30px 10px;
-        border-top: $borderSolidDDD;
-        border-bottom: $borderSolidDDD;
-        font-size: 1.25rem;
-        p {
-            display: inline;
-        }
-        span {
-            float: right;
-        }
+.coffee-info-nutri {
+  .coffee-nutri-head {
+    padding: 30px 10px;
+    border-top: $borderSolidDDD;
+    border-bottom: $borderSolidDDD;
+    font-size: 1.25rem;
+    p {
+      display: inline;
     }
-    .coffee-nutri-cnt {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px 10px;
-        font-size: 1.125rem;
-        > div {
-            flex-basis: 50%;
-            padding: 10px 15px;
-        }
-        .nutri1 {
-            border-right: $borderDottedDDD;
-        }
-        dl {
-            @include flexBetween;
-            margin: 0 0 1.25rem 0;
-        }
+    span {
+      float: right;
     }
-    .cooffee-nutri-allergy {
-        margin-bottom: 30px;
-        padding: 20px;
-        background: $color-nav;
+  }
+  .coffee-nutri-cnt {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    font-size: 1.125rem;
+    > div {
+      flex-basis: 50%;
+      padding: 10px 15px;
     }
+    .nutri1 {
+      border-right: $borderDottedDDD;
+    }
+    dl {
+      @include flexBetween;
+      margin: 0 0 1.25rem 0;
+    }
+  }
+  .cooffee-nutri-allergy {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: $color-nav;
+  }
 }
 
-.coffee-review{
-    .review-title {
-        padding-bottom: 15px;
-        font-size: 1.2rem;
-        border-bottom: 2px solid $color-border;
+.coffee-review {
+  .review-title {
+    padding-bottom: 15px;
+    border-bottom: 2px solid $color-border;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .review-cnt {
+    margin: 1rem 0 2rem;
+  }
+  .review-user {
+    display: flex;
+    padding: 6px 0;
+    dt {
+      font-weight: $font-bold;
+      margin-right: 1rem;
     }
-    .review-cnt {
-        margin: 1rem 0 2rem;
-    }
-    .review-user {
-        display: flex;
-        padding: 6px 0;
-        dt {
-            font-weight: $font-bold;
-            margin-right: 1rem;
-        }
-    }
+  }
 }
 
 .input-review {
-    padding: 10px;
-    width: 100%;
-    background: $color-nav;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  width: 100%;
+  background: $color-nav;
+  border: none;
+  font-size: 1.5rem;
+  input[type="text"] {
+    width: 95%;
+    background: transparent;
     border: none;
-    font-size: 1rem;
+    outline: none;
+    font-size: 1.125rem;
     &:placeholder {
-        color: $color-777;
-        font-weight: $font-bold;
+      color: $color-777;
     }
-}
+  }
 
+  svg {
+    color: $color-border;
+    cursor: pointer;
+    pointer-events: none;
+    @include transition;
+  }
+  &.is-typing {
+    svg {
+      color: #4d3d2b;
+      pointer-events: visible;
+    }
+  }
+}

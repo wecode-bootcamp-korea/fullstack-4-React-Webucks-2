@@ -31,7 +31,9 @@ function List() {
       {/* coffeeList */}
       <div className="cold">
         <div className="coldBrewHead">
-          <div className="coldBrewName"><b>콜드 브루 커피</b></div>
+          <div className="coldBrewName">
+            <b>콜드 브루 커피</b>
+          </div>
           <img
             className="decafImg"
             src="images/logo_decaf.png"
@@ -41,11 +43,11 @@ function List() {
             디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)
           </div>
         </div>
-          <ul>
-            {coffeeList.map((coffee) => (
-              <Card coffee={coffee} />
-            ))}
-          </ul>
+        <ul>
+          {coffeeList.map((coffee) => (
+            <Card coffee={coffee} />
+          ))}
+        </ul>
       </div>
 
       {/* brewList */}
