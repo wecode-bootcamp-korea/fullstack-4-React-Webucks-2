@@ -1,17 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TopNav from '../components/TopNav/TopNav.js'
 import './Detail.scss'
-
+import { faHeart as solidHeart} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function Detail() {
+    const [heart, setHeart] = useState("black");
+    const [username, setUserName] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleLike =()=>{
+        heart ==="black" 
+        ? setHeart("red") 
+        : setHeart("black")
+      };
+
+      const onChangeUserName =(e)=>{
+        setUserName(e.target.value);
+      };
+    
+      const onChangeMessage =(e)=>{
+        setMessage(e.target.value);
+      };
+    
+      const onKeyPress = (e)=>{
+        if(e.key === 'Enter'){
+          onClick();
+        }
+      }
+    
+      const onClick =()=>{
+        alert(username + ': ' + message);
+        setUserName('');
+        setMessage('');
+      };
 
 
     return (
 <div>
-    
     <TopNav />
-        
         <section>   
             <h1>콜드 브루</h1>
             <h3>홈 > Menu > 음료 > 에스프레소 > 화이트 초콜릿 모카</h3>
@@ -21,10 +49,16 @@ function Detail() {
                     <div className='discription'>
                         <div className='nameBox'>
                             <div className='coffeeName'>
-                                <h1>화이트 초콜릿 모카</h1>
-                                <h3>White Chocolate Mocha</h3>
+                                <div>
+                                    <h1>화이트 초콜릿 모카</h1>
+                                    <h3>White Chocolate Mocha</h3>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon className="heart" icon={solidHeart} onClick={handleLike}
+                                    style={{color:heart}}
+                                    />
+                                </div>
                             </div>
-                            <div>Like</div>
                         </div>
                         <div className='discriptionBox'>
                             <div className='coffeediscription'>달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프레소가 부드럽게 어우러진 커피</div>        
@@ -72,7 +106,25 @@ function Detail() {
                                 <li><span className='nickName'>legend_dev</span>
                                     <span> 진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다. 진짜... </span></li>
                             </ol>
-                            <div className='reviewForm'>리뷰를 입력 해주세요</div>
+                            {/* <div className='reviewForm'>리뷰를 입력 해주세요</div> */}
+                            <div className="reviewBox">
+                                <input className="reviewId" 
+                                    placeholder="닉네임을 입력해주세요"
+                                    type="text"
+                                    name="username"
+                                    value={username}
+                                    onChange={onChangeUserName}
+                                />
+                                <input className="review" 
+                                    placeholder="리뷰를 입력해주세요"
+                                    type="text"
+                                    name="message"
+                                    value={message}
+                                    onChange={onChangeMessage}
+                                    onKeyPress={onKeyPress}
+                                />
+                                <button onClick={onClick}>등록하기</button>
+                            </div>
                         </div>
                     </div>
                 </div>

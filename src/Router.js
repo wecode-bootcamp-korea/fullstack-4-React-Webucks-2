@@ -40,7 +40,6 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/login-jeongseok" element={<LoginJeongseok />} />
-
         <Route path="/list-jeongseok" element={<ListJeongseok />} />
         <Route path="/detail-jeongseok" element={<DetailJeongseok />} />
 
